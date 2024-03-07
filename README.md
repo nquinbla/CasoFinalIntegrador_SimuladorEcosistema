@@ -19,7 +19,7 @@ LINK: https://github.com/nquinbla/CasoFinalIntegrador_EcosistemaInteligente.git
 * Autenticación: Implementar un sistema de autenticación para asegurar que solo usuarios autorizados puedan acceder al sistema.
 * Registro de Actividades: Crear un sistema de registro que almacene los resultados y configuraciones de las simulaciones anteriores.
 
-### [4] Análisis Avanzado:
+### [4] AnálisisAvanzado Avanzado:
 * Resolución de Problemas: Desarrollar herramientas avanzadas para resolver problemas específicos, como la búsqueda de equilibrios ecológicos o la evaluación de estrategias de conservación.
 * Visualización de Datos: Implementar métodos para visualizar los datos de la simulación de manera que los investigadores puedan interpretarlos fácilmente.
 * Integración de Nuevas Funciones: Permitir que los investigadores introduzcan sus propios modelos y funciones en el simulador para adaptarlo a sus necesidades específicas.
