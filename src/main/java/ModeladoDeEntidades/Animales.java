@@ -6,15 +6,13 @@ public class Animales extends Organismos{
     private boolean herbívoro;
     private boolean carnívoro;
     private boolean omnívoro;
-    private boolean carroñero;
 
     // [2] Constructor de la clase Animales
-    public Animales(int posición, int salud, int edad, boolean estadoReproductivo, boolean herbívoro, boolean carnívoro, boolean omnívoro, boolean carroñero) {
+    public Animales(int posición, int salud, int edad, boolean estadoReproductivo, boolean herbívoro, boolean carnívoro, boolean omnívoro) {
         super(posición, salud, edad, estadoReproductivo);
         this.herbívoro = herbívoro;
         this.carnívoro = carnívoro;
         this.omnívoro = omnívoro;
-        this.carroñero = carroñero;
     }
 
     // [3] Getters y setters de la clase Animales
@@ -39,11 +37,34 @@ public class Animales extends Organismos{
         this.omnívoro = omnívoro;
     }
 
-    public boolean isCarroñero() {
-        return carroñero;
+    // [4] Métodos para las interacciones
+    public void predar (Animales presa) {
+        if (this.carnívoro) {
+            presa.setSalud(presa.getSalud() - 10);
+        } if (this.omnívoro) {
+            presa.setSalud(presa.getSalud() - 5);
+        } if (this.herbívoro) {
+            presa.setSalud(presa.getSalud() - 2);
+        } if (presa.getSalud() <= 0) {
+            presa.setEstadoReproductivo(false);
+        }
     }
-    public void setCarroñero(boolean carroñero) {
-        this.carroñero = carroñero;
+
+    public void competirPorRecursos() {
+        if (this.herbívoro) {
+            this.setSalud(this.getSalud() - 2);
+        } if (this.carnívoro) {
+            this.setSalud(this.getSalud() - 5);
+        } if (this.omnívoro) {
+            this.setSalud(this.getSalud() - 3);
+        }
+    }
+
+    public void reproducirse(Animales pareja) {
+        if (this.isEstadoReproductivo() && pareja.isEstadoReproductivo()) {
+            this.setSalud(this.getSalud() - 5);
+            pareja.setSalud(pareja.getSalud() - 5);
+        }
     }
 
 }

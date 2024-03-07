@@ -37,4 +37,11 @@ public class Plantas extends Organismos{
         this.flor = flor;
     }
 
+    // [4] Métodos para las interacciones
+    public void polinizar(Plantas planta) {
+        if (this.flor) {
+            planta.setSemillas(planta.getSemillas() + 5);
+        }
+    }
+
 }

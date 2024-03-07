@@ -4,10 +4,10 @@ package ModeladoDeEntidades;
 public class Ambiente {
     private String clima; // Clima del ambiente
     private String terreno; // Terreno del ambiente
-    private String recursos; // Recursos del ambiente
+    private int recursos; // Recursos del ambiente
 
     // [2] Constructor de la clase
-    public Ambiente(String clima, String terreno, String recursos) {
+    public Ambiente(String clima, String terreno, int recursos) {
         this.clima = clima;
         this.terreno = terreno;
         this.recursos = recursos;
@@ -17,7 +17,6 @@ public class Ambiente {
     public String getClima() {
         return clima;
     }
-
 public void setClima(String clima) {
         this.clima = clima;
     }
@@ -25,16 +24,14 @@ public void setClima(String clima) {
     public String getTerreno() {
         return terreno;
     }
-
     public void setTerreno(String terreno) {
         this.terreno = terreno;
     }
 
-    public String getRecursos() {
+    public int getRecursos() {
         return recursos;
     }
-
-    public void setRecursos(String recursos) {
+    public void setRecursos(int recursos) {
         this.recursos = recursos;
     }
 
@@ -65,7 +62,7 @@ public void setClima(String clima) {
             return false;
         }
 
-        if ((this.recursos == null) ? (other.recursos != null) : !this.recursos.equals(other.recursos)) {
+        if (this.recursos != other.recursos) {
             return false;
         }
 
