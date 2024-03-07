@@ -9,6 +9,8 @@ import java.util.Random;
 public class Simulador {
     private Ambiente ambiente; // Ambiente de la simulación
     private List<Organismos> población; // Población de organismos
+    private int tasaCrecimiento; // Tasa de crecimiento de la población
+    private int poblaciónInicial; // Población inicial de la simulación
 
     // [2] Constructor de la clase
     public void eventosAleatorios() {
@@ -67,6 +69,13 @@ public class Simulador {
         }
         System.out.println("Cantidad de organismos en edad reproductiva: " + cantidadReproductiva);
     }
-}
 
+    public void setPoblaciónInicial(int poblaciónInicial) {
+        this.poblaciónInicial = poblaciónInicial;
+    }
+
+    public void setTasaCrecimiento(int tasaCrecimiento) {
+        this.tasaCrecimiento = tasaCrecimiento;
+    }
+}
 

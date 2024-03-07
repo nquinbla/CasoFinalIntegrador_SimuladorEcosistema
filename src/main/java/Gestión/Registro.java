@@ -1,5 +1,5 @@
 package Gestión;
-import java.util.List
+import java.util.List;
 
 // [1] Clase Registro
 public class Registro {
