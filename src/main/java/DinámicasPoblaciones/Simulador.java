@@ -11,6 +11,7 @@ public class Simulador {
     private List<Organismos> población; // Población de organismos
     private int tasaCrecimiento; // Tasa de crecimiento de la población
     private int poblaciónInicial; // Población inicial de la simulación
+    private int días; // Días de la simulación
 
     // [2] Constructor de la clase
     public void eventosAleatorios() {
@@ -77,5 +78,18 @@ public class Simulador {
     public void setTasaCrecimiento(int tasaCrecimiento) {
         this.tasaCrecimiento = tasaCrecimiento;
     }
+    public int getPoblacion() {
+        return this.población.size();
+    }
+
+    public void simularUnDia() {
+        // lógica para simular un día
+        this.días++;
+    }
+
+    public int getDias() {
+        return this.días;
+    }
+
 }
 
