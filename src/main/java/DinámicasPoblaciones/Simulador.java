@@ -3,6 +3,7 @@ package DinámicasPoblaciones;
 import ModeladoDeEntidades.Ambiente;
 import ModeladoDeEntidades.Organismos;
 import java.util.List;
+import java.util.ArrayList;
 import java.util.Random;
 
 // [1] Clase Simulador
@@ -12,6 +13,11 @@ public class Simulador {
     private int tasaCrecimiento; // Tasa de crecimiento de la población
     private int poblaciónInicial; // Población inicial de la simulación
     private int días; // Días de la simulación
+
+    public Simulador() {
+        this.población = new ArrayList<>();
+        // ... other initializations ...
+    }
 
     // [2] Constructor de la clase
     public void eventosAleatorios() {
