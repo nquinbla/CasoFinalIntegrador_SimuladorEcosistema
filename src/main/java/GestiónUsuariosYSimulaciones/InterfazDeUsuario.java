@@ -3,14 +3,14 @@ package GestiónUsuariosYSimulaciones;
 import javax.swing.*;
 import java.awt.*;
 
-public class SimuladorUI extends JFrame {
+public class InterfazDeUsuario extends JFrame {
     private JTextField parametro1Field;
     private JTextField parametro2Field;
     private JButton iniciarSimulacionButton;
     private JButton detenerSimulacionButton;
     private JTextArea resultadosArea;
 
-    public SimuladorUI() {
+    public void SimuladorUI() {
         parametro1Field = new JTextField(20);
         parametro2Field = new JTextField(20);
         iniciarSimulacionButton = new JButton("Iniciar simulación");

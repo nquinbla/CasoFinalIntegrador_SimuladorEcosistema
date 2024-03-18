@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="182db69b-6fdc-4951-b319-29bd34b03cd7" name="Changes" comment="arreglos" />
+    <list default="true" id="182db69b-6fdc-4951-b319-29bd34b03cd7" name="Changes" comment="interfaz de usuarios" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,7 +75,7 @@
       <workItem from="1709839589490" duration="1342000" />
       <workItem from="1710065713272" duration="51000" />
       <workItem from="1710774935067" duration="3206000" />
-      <workItem from="1710783525369" duration="2528000" />
+      <workItem from="1710783525369" duration="2944000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <option name="closed" value="true" />
@@ -309,7 +309,23 @@
       <option name="project" value="LOCAL" />
       <updated>1710786041953</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="interfaz de usuarios">
+      <option name="closed" value="true" />
+      <created>1710786363838</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1710786363838</updated>
+    </task>
+    <task id="LOCAL-00031" summary="interfaz de usuarios">
+      <option name="closed" value="true" />
+      <created>1710786445386</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1710786445386</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,6 +350,7 @@
     <MESSAGE value="si" />
     <MESSAGE value="resultados salud" />
     <MESSAGE value="arreglos" />
-    <option name="LAST_COMMIT_MESSAGE" value="arreglos" />
+    <MESSAGE value="interfaz de usuarios" />
+    <option name="LAST_COMMIT_MESSAGE" value="interfaz de usuarios" />
   </component>
 </project>
