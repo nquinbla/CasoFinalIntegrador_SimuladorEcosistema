@@ -13,4 +13,35 @@ public class Planta extends Organismo{
         this.cantidadDeLuz = cantidadDeLuz;
         this.cantidadDeNutrientes = cantidadDeNutrientes;
     }
+
+    // Getters y setters de la clase Planta
+    public int getCantidadDeAgua() {
+        return cantidadDeAgua;
+    }
+
+    public void setCantidadDeAgua(int cantidadDeAgua) {
+        this.cantidadDeAgua = cantidadDeAgua;
+    }
+
+    public int getCantidadDeLuz() {
+        return cantidadDeLuz;
+    }
+
+    public void setCantidadDeLuz(int cantidadDeLuz) {
+        this.cantidadDeLuz = cantidadDeLuz;
+    }
+
+    public int getCantidadDeNutrientes() {
+        return cantidadDeNutrientes;
+    }
+
+    public void setCantidadDeNutrientes(int cantidadDeNutrientes) {
+        this.cantidadDeNutrientes = cantidadDeNutrientes;
+    }
+
+    // Método Override
+    @Override
+    public String toString() {
+        return "Planta{" + "cantidadDeAgua=" + cantidadDeAgua + ", cantidadDeLuz=" + cantidadDeLuz + ", cantidadDeNutrientes=" + cantidadDeNutrientes + '}';
+    }
 }
