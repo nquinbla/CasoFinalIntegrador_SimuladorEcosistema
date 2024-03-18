@@ -47,8 +47,8 @@ public class Animal extends Organismo {
     }
 
     @Override
-    public void reproducirse(Organismo pareja) {
-
+    public Organismo reproducirse(Organismo pareja) {
+        return pareja;
     }
 
     @Override
