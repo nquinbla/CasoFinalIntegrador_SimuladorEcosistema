@@ -15,6 +15,10 @@ public class Animales extends Organismos{
         this.omnívoro = omnívoro;
     }
 
+    public Animales(String nombreEspecie, int energiaInicial, int velocidad) {
+        super(nombreEspecie, energiaInicial, velocidad);
+    }
+
     // [3] Getters y setters de la clase Animales
     public boolean isHerbívoro() {
         return herbívoro;
