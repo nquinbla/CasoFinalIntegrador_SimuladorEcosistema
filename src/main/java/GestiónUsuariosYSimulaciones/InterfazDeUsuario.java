@@ -1,37 +1,36 @@
 package GestiónUsuariosYSimulaciones;
 
-import javafx.application.Application;
-import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
-import javafx.scene.layout.VBox;
-import javafx.stage.Stage;
+import javax.swing.*;
+import java.awt.*;
 
-public class SimuladorUI extends Application {
-    private TextField parametro1Field;
-    private TextField parametro2Field;
-    private Button iniciarSimulacionButton;
-    private Button detenerSimulacionButton;
-    private TextArea resultadosArea;
+public class SimuladorUI extends JFrame {
+    private JTextField parametro1Field;
+    private JTextField parametro2Field;
+    private JButton iniciarSimulacionButton;
+    private JButton detenerSimulacionButton;
+    private JTextArea resultadosArea;
 
-    @Override
-    public void start(Stage primaryStage) {
-        parametro1Field = new TextField();
-        parametro2Field = new TextField();
-        iniciarSimulacionButton = new Button("Iniciar simulación");
-        detenerSimulacionButton = new Button("Detener simulación");
-        resultadosArea = new TextArea();
+    public SimuladorUI() {
+        parametro1Field = new JTextField(20);
+        parametro2Field = new JTextField(20);
+        iniciarSimulacionButton = new JButton("Iniciar simulación");
+        detenerSimulacionButton = new JButton("Detener simulación");
+        resultadosArea = new JTextArea(10, 30);
 
-        VBox layout = new VBox(10, parametro1Field, parametro2Field, iniciarSimulacionButton, detenerSimulacionButton, resultadosArea);
-        Scene scene = new Scene(layout, 300, 250);
+        setLayout(new FlowLayout());
+        add(parametro1Field);
+        add(parametro2Field);
+        add(iniciarSimulacionButton);
+        add(detenerSimulacionButton);
+        add(new JScrollPane(resultadosArea));
 
-        primaryStage.setTitle("Simulador");
-        primaryStage.setScene(scene);
-        primaryStage.show();
+        setTitle("Simulador");
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        pack();
+        setVisible(true);
     }
 
     public static void main(String[] args) {
-        launch(args);
+        SwingUtilities.invokeLater(SimuladorUI::new);
     }
 }
