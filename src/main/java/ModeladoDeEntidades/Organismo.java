@@ -21,6 +21,7 @@ public abstract  class Organismo {
     public int getX() {
         return x;
     }
+
     public void setX(int x) {
         this.x = x;
     }
@@ -62,8 +63,5 @@ public abstract  class Organismo {
     public String toString() {
         return "Organismo{" + "x=" + x + ", y=" + y + ", edad=" + edad + ", salud=" + salud + ", EstadoReproductivo=" + EstadoReproductivo + '}';
     }
-
-
-
 
 }
