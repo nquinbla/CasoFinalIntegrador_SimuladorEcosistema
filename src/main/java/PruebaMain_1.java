@@ -14,7 +14,7 @@ public class PruebaMain_1 {
             System.out.println("------  MENÚ PRINCIPAL  ------");
             System.out.println("Por favor, selecciona una opción:");
             System.out.println("1. Agregar una nueva especie al ecosistema");
-            System.out.println("2. Simular X tiempo en el ecosistema");
+            System.out.println("2. Simular un ciclo de tiempo en el ecosistema");
             System.out.println("3. Visualizar datos de la simulación");
             System.out.println("4. Salir");
 

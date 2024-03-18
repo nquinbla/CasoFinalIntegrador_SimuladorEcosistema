@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="182db69b-6fdc-4951-b319-29bd34b03cd7" name="Changes" comment="arreglos">
-      <change afterPath="$PROJECT_DIR$/src/main/java/PruebaMain_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="182db69b-6fdc-4951-b319-29bd34b03cd7" name="Changes" comment="prueba main 1 (arreglos)">
+      <change beforePath="$PROJECT_DIR$/src/main/java/PruebaMain_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PruebaMain_1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +77,7 @@
       <workItem from="1709839589490" duration="1342000" />
       <workItem from="1710065713272" duration="51000" />
       <workItem from="1710774935067" duration="3206000" />
-      <workItem from="1710783525369" duration="6980000" />
+      <workItem from="1710783525369" duration="7381000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <option name="closed" value="true" />
@@ -360,7 +359,39 @@
       <option name="project" value="LOCAL" />
       <updated>1710789407964</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="prueba main 1">
+      <option name="closed" value="true" />
+      <created>1710791965734</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1710791965734</updated>
+    </task>
+    <task id="LOCAL-00037" summary="prueba main 1">
+      <option name="closed" value="true" />
+      <created>1710792146148</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1710792146148</updated>
+    </task>
+    <task id="LOCAL-00038" summary="prueba main 1 (arreglos)">
+      <option name="closed" value="true" />
+      <created>1710792193311</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1710792193311</updated>
+    </task>
+    <task id="LOCAL-00039" summary="prueba main 1 (arreglos)">
+      <option name="closed" value="true" />
+      <created>1710792224642</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1710792224642</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -387,6 +418,8 @@
     <MESSAGE value="interfaz de usuarios" />
     <MESSAGE value="visualizacion de datos" />
     <MESSAGE value="arreglos" />
-    <option name="LAST_COMMIT_MESSAGE" value="arreglos" />
+    <MESSAGE value="prueba main 1" />
+    <MESSAGE value="prueba main 1 (arreglos)" />
+    <option name="LAST_COMMIT_MESSAGE" value="prueba main 1 (arreglos)" />
   </component>
 </project>
