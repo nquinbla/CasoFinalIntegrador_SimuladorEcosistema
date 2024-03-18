@@ -21,10 +21,11 @@ public class PruebaMain_1 {
             int opcion = scanner.nextInt();
 
             switch (opcion) {
-                case 1:
-                    // Aquí puedes agregar la lógica para agregar una nueva especie al ecosistema
+                case 1: // Aquí puedes agregar la lógica para agregar una nueva especie al ecosistema
+
                     break;
-                case 2: // Aquí puedes agregar la lógica para simular X tiempo en el ecosistema
+
+                case 2: // Simular X tiempo en el ecosistema
                     System.out.println("----- SIMULACIÓN DE TIEMPO  -----");
                     System.out.println("Por favor, selecciona una opción:");
                     System.out.println("1. Simular un día");
@@ -32,11 +33,14 @@ public class PruebaMain_1 {
                     System.out.println("3. Simular un mes");
                     System.out.println("4. Simular un año");
                     System.out.println("5. Volver al menú principal");
+
                     simulador.simularUnDia();
                     break;
+
                 case 3:
                     // Aquí puedes agregar la lógica para visualizar los datos de la simulación
                     break;
+
                 case 4:
                     System.out.println("Saliendo...");
                     return;
