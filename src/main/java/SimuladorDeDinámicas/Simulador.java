@@ -7,6 +7,7 @@ import java.util.List;
 // Clase simulador
 public class Simulador {
     private List<Organismo> poblacion = new ArrayList<>();
+    private EventosAleatorios eventosAleatorios = new EventosAleatorios();
 
     // Método que simula el crecimiento y la reproducción de la población
     public void simularCrecimientoYReproduccion() {
@@ -38,5 +39,9 @@ public class Simulador {
         // Implementa la lógica para determinar si posiblePareja es una pareja elegible para organismo
         // Por ejemplo, podrías comprobar si son de la misma especie, si el posiblePareja está en estado reproductivo, etc.
         return true;
+    }
+    public void simular() {
+        simularCrecimientoYReproduccion();
+        eventosAleatorios.simularEventosAleatorios(poblacion);
     }
 }
