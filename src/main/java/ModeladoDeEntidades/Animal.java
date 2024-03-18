@@ -34,4 +34,20 @@ public class Animal extends Organismo {
     public String toString() {
         return "Animal{" + "depredador=" + depredador + ", presa=" + presa + '}';
     }
+
+    // Métodos abstractos
+    @Override
+    public void moverse() {
+
+    }
+
+    @Override
+    public void comer() {
+
+    }
+
+    @Override
+    public void reproducirse() {
+
+    }
 }
