@@ -2,7 +2,6 @@ import java.util.Scanner;
 import Gestión.Usuario;
 import DinámicasPoblaciones.Simulador;
 import ModeladoDeEntidadesPrueba.Animales;
-import ModeladoDeEntidadesPrueba.Plantas;
 
 
 public class Main2 {
