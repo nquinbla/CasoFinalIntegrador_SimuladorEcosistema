@@ -1,4 +1,4 @@
-package ModeladoDeEntidades;
+package ModeladoDeEntidadesPrueba;
 
 // [1] Clase Plantas
 public class Plantas extends Organismos{

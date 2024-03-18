@@ -1,9 +1,8 @@
 import java.util.Scanner;
 import Gestión.Usuario;
 import DinámicasPoblaciones.Simulador;
-import AnálisisAvanzado.AnalisisAvanzado;
-import ModeladoDeEntidades.Animales;
-import ModeladoDeEntidades.Plantas;
+import ModeladoDeEntidadesPrueba.Animales;
+import ModeladoDeEntidadesPrueba.Plantas;
 
 
 public class Main2 {

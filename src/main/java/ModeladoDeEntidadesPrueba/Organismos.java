@@ -1,4 +1,4 @@
-package ModeladoDeEntidades;
+package ModeladoDeEntidadesPrueba;
 
 // [1] Clase abstracta Organismos
 public abstract class Organismos {

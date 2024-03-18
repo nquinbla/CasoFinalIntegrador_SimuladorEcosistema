@@ -1,4 +1,4 @@
-package ModeladoDeEntidades;
+package ModeladoDeEntidadesPrueba;
 
 // [1] Clase Ambiente
 public class Ambiente {
