@@ -1,7 +1,7 @@
 package ModeladoDeEntidades;
 
 // Clase Planta
-public class Planta extends Organismo {
+public abstract class Planta extends Organismo {
     protected int cantidadDeAgua;
     protected int cantidadDeLuz;
     protected int cantidadDeNutrientes;
