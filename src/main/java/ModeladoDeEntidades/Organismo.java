@@ -70,4 +70,8 @@ public abstract  class Organismo {
     public abstract void comer();
 
     public abstract void reproducirse();
+
+    // Métodos abstractos para interacciones naturales
+    public abstract void predation();
+    public abstract void competeForResources();
 }
