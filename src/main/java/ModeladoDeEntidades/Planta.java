@@ -1,7 +1,7 @@
 package ModeladoDeEntidades;
 
 // Clase Planta
-public class Planta extends Organismo{
+public class Planta extends Organismo {
     protected int cantidadDeAgua;
     protected int cantidadDeLuz;
     protected int cantidadDeNutrientes;
@@ -43,5 +43,21 @@ public class Planta extends Organismo{
     @Override
     public String toString() {
         return "Planta{" + "cantidadDeAgua=" + cantidadDeAgua + ", cantidadDeLuz=" + cantidadDeLuz + ", cantidadDeNutrientes=" + cantidadDeNutrientes + '}';
+    }
+
+    // Métodos abstractos
+    @Override
+    public void moverse() {
+        // Implement the method for the Planta class
+    }
+
+    @Override
+    public void comer() {
+        // Implement the method for the Planta class
+    }
+
+    @Override
+    public void reproducirse() {
+        // Implement the method for the Planta class
     }
 }

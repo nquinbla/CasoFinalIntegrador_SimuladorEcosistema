@@ -64,4 +64,10 @@ public abstract  class Organismo {
         return "Organismo{" + "x=" + x + ", y=" + y + ", edad=" + edad + ", salud=" + salud + ", EstadoReproductivo=" + EstadoReproductivo + '}';
     }
 
+    // Métodos abstractos
+    public abstract void moverse();
+
+    public abstract void comer();
+
+    public abstract void reproducirse();
 }
