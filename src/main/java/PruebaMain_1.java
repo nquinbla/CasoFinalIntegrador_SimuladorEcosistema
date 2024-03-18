@@ -22,6 +22,23 @@ public class PruebaMain_1 {
 
             switch (opcion) {
                 case 1: // Aquí puedes agregar la lógica para agregar una nueva especie al ecosistema
+                    System.out.println("Introduce el nombre de la especie:");
+                    String nombreEspecie = scanner.next();
+                    System.out.println("Introduce la energía inicial de la especie:");
+                    int energiaInicial = scanner.nextInt();
+                    System.out.println("¿Es esta especie un animal o una planta?");
+                    String tipoEspecie = scanner.next();
+                    if (tipoEspecie.equalsIgnoreCase("animal")) {
+                        System.out.println("Introduce la velocidad del animal:");
+                        int velocidad = scanner.nextInt();
+                        Animal animal = new Animal(nombreEspecie, energiaInicial, velocidad);
+                        simulador.agregarEspecie(animal);
+                    } else if (tipoEspecie.equalsIgnoreCase("planta")) {
+                        System.out.println("Introduce la tasa de crecimiento de la planta:");
+                        int tasaCrecimiento = scanner.nextInt();
+                        Planta planta = new Planta(nombreEspecie, energiaInicial, tasaCrecimiento);
+                        simulador.agregarEspecie(planta);
+                    }
 
                     break;
 
