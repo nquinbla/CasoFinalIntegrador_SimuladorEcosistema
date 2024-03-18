@@ -34,7 +34,20 @@ public class PruebaMain_1 {
                     System.out.println("4. Simular un año");
                     System.out.println("5. Volver al menú principal");
 
-                    simulador.simularUnDia();
+                    if (opcion == 1) {
+                        simulador.simularUnDia();
+                    } else if (opcion == 2) {
+                        simulador.simularUnaSemana();
+                    } else if (opcion == 3) {
+                        simulador.simularUnMes();
+                    } else if (opcion == 4) {
+                        simulador.simularUnAño();
+                    } else if (opcion == 5) {
+                        break;
+                    } else {
+                        System.out.println("Opción no válida. Por favor, intenta de nuevo.");
+                    }
+
                     break;
 
                 case 3:
