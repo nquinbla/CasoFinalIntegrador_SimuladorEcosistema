@@ -29,8 +29,4 @@ public class InterfazDeUsuario extends JFrame {
         pack();
         setVisible(true);
     }
-
-    public static void main(String[] args) {
-        SwingUtilities.invokeLater(SimuladorUI::new);
-    }
 }
