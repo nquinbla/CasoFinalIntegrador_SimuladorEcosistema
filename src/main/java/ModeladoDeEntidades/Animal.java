@@ -50,4 +50,14 @@ public class Animal extends Organismo {
     public void reproducirse() {
 
     }
+
+    @Override
+    public void predation() {
+
+    }
+
+    @Override
+    public void competeForResources() {
+
+    }
 }
