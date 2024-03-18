@@ -57,7 +57,7 @@ public class Planta extends Organismo {
     }
 
     @Override
-    public void reproducirse() {
+    public void reproducirse(Organismo pareja) {
         // Implement the method for the Planta class
     }
 }

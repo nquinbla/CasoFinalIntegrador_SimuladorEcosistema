@@ -5,7 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="182db69b-6fdc-4951-b319-29bd34b03cd7" name="Changes" comment="arreglos">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SimuladorDeDinámicas/EventosAleatorios.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SimuladorDeDinámicas/ResultadosSimulación.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SimuladorDeDinámicas/Simulador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AnálisisAvanzado/AnalisisAvanzado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AnálisisAvanzado/AnalisisAvanzado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DinámicasPoblaciones/Simulador.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gestión/InterfazUsuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gestión/InterfazUsuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ModeladoDeEntidades/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ModeladoDeEntidades/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ModeladoDeEntidades/Organismo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ModeladoDeEntidades/Organismo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ModeladoDeEntidades/Planta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ModeladoDeEntidades/Planta.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,23 +46,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/nerea/IdeaProjects/CasoFinalIntegrador_SimuladorEcosistema&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/nerea/IdeaProjects/CasoFinalIntegrador_SimuladorEcosistema",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -71,7 +89,7 @@
       <workItem from="1709839589490" duration="1342000" />
       <workItem from="1710065713272" duration="51000" />
       <workItem from="1710774935067" duration="3206000" />
-      <workItem from="1710783525369" duration="376000" />
+      <workItem from="1710783525369" duration="1718000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <option name="closed" value="true" />
@@ -257,7 +275,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710777333534</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="arreglos">
+      <option name="closed" value="true" />
+      <created>1710783937726</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1710783937726</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

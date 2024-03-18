@@ -1,6 +1,5 @@
 import java.util.Scanner;
 import Gestión.Usuario;
-import DinámicasPoblaciones.Simulador;
 import AnálisisAvanzado.AnalisisAvanzado;
 
 public class Main {

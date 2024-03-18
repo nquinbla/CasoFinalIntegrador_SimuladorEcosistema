@@ -69,7 +69,7 @@ public abstract  class Organismo {
 
     public abstract void comer();
 
-    public abstract void reproducirse();
+    public abstract Organismo reproducirse(Organismo pareja);
 
     // Métodos abstractos para interacciones naturales
     public abstract void predation();
