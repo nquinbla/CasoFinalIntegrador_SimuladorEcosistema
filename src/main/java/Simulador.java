@@ -5,7 +5,36 @@ import SimuladorDeDinámicas.*;
 import java.util.Scanner;
 
 public class Simulador {
-    public static void main(String[] args) {
+
+    // Crear objetos de las clases Animal
+    Animal newAnimal = new Animal(2, 3, 24, 100, true, "León", "Panthera leo", "Macho");
+    Animal newAnimal2 = new Animal(65, 3, 22, 100, true, "Leona", "Panthera leo", "Hembra");
+    Animal newAnimal3 = new Animal(2, 3, 65, 100, true, "Lobo", "Canis Lopus", "Macho");
+    Animal newAnimal4 = new Animal(2, 3, 21, 100, true, "Loba", "Canis Lopus", "Hembra");
+    Animal newAnimal5 = new Animal(2, 3, 24, 100, true, "Tigre", "Panthera tigris", "Macho");
+    Animal newAnimal6 = new Animal(2, 3, 22, 100, true, "Tigresa", "Panthera tigris", "Hembra");
+    Animal newAnimal7 = new Animal(2, 3, 24, 100, true, "Elefante", "Loxodonta africana", "Macho");
+    Animal newAnimal8 = new Animal(2, 3, 22, 100, true, "Elefanta", "Loxodonta africana", "Hembra");
+    Animal newAnimal9 = new Animal(2, 3, 24, 100, true, "Jirafa", "Giraffa camelopardalis", "Macho");
+    Animal newAnimal10 = new Animal(2, 3, 22, 100, true, "Jirafa", "Giraffa camelopardalis", "Hembra");
+
+
+    // Crear objetos de las clases Planta
+    Planta newPlanta = new Planta(2, 3, 24, 100, true, "Rosa", "Rosa", 100, 100, 100);
+    Planta newPlanta2 = new Planta(2, 3, 24, 100, true, "Girasol", "Helianthus annuus", 100, 100, 100);
+    Planta newPlanta3 = new Planta(2, 3, 24, 100, true, "Orquídea", "Orchidaceae", 100, 100, 100);
+    Planta newPlanta4 = new Planta(2, 3, 24, 100, true, "Margarita", "Bellis perennis", 100, 100, 100);
+    Planta newPlanta5 = new Planta(2, 3, 24, 100, true, "Tulipán", "Tulipa", 100, 100, 100);
+    Planta newPlanta6 = new Planta(2, 3, 24, 100, true, "Lirio", "Lilium", 100, 100, 100);
+    Planta newPlanta7 = new Planta(2, 3, 24, 100, true, "Marihuana", "Cannabis sativa", 100, 100, 100);
+    Planta newPlanta8 = new Planta(2, 3, 24, 100, true, "Coca", "Erythroxylum coca", 100, 100, 100);
+    Planta newPlanta9 = new Planta(2, 3, 24, 100, true, "Amapola", "Papaver somniferum", 100, 100, 100);
+    Planta newPlanta10 = new Planta(2, 3, 24, 100, true, "Cactus", "Cactaceae", 100, 100, 100);
+
+
+
+
+   public static void main(String[] args) {
         System.out.println("----- GESTOR DE SIMULACIONES -----");
         System.out.println("Bienvenido al gestor de simulaciones, por favor, seleccione una opción:");
         System.out.println("1. Invitado");
