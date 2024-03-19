@@ -4,10 +4,10 @@ package ModeladoDeEntidades;
 public class Ambiente {
     protected String clima;
     protected String terreno;
-    protected String recursosDisponibles;
+    protected int recursosDisponibles;
 
     // Constructor de la clase Ambiente
-    public Ambiente(String clima, String terreno, String recursosDisponibles) {
+    public Ambiente(String clima, String terreno, int recursosDisponibles) {
         this.clima = clima;
         this.terreno = terreno;
         this.recursosDisponibles = recursosDisponibles;
@@ -22,21 +22,17 @@ public class Ambiente {
         this.clima = clima;
     }
 
-    public String getTerreno() {
-        return terreno;
-    }
+    public String getTerreno() {return terreno;}
 
     public void setTerreno(String terreno) {
         this.terreno = terreno;
     }
 
-    public String getRecursosDisponibles() {
+    public int getRecursosDisponibles() {
         return recursosDisponibles;
     }
 
-    public void setRecursosDisponibles(String recursosDisponibles) {
-        this.recursosDisponibles = recursosDisponibles;
-    }
+    public void setRecursosDisponibles(int recursosDisponibles) {this.recursosDisponibles = recursosDisponibles;}
 
     // Método Override
     @Override
