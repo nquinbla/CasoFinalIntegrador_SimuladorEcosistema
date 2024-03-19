@@ -23,6 +23,8 @@ public abstract  class Organismo {
     // Getters y setters de la clase Organismo
     public String getNombre() {return nombreEspecie;}
     public void setNombre(String nombre) {this.nombreEspecie = nombre;}
+    public Posicion getPosicion() {return posicion;}
+    public void setPosicion(Posicion posicion) {this.posicion = posicion;}
     public int getEdad() {return edad;}
     public void setEdad(int edad) {this.edad = edad;}
     public int getSalud() {return salud;}

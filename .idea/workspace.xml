@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="182db69b-6fdc-4951-b319-29bd34b03cd7" name="Changes" comment="arreglos">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Simulador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Simulador.java" afterDir="false" />
+    <list default="true" id="182db69b-6fdc-4951-b319-29bd34b03cd7" name="Changes" comment="arreglos y crecimiento">
+      <change afterPath="$PROJECT_DIR$/src/main/java/SimuladorDeDinámicas/Reproduccion.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,95 +81,7 @@
       <workItem from="1710774935067" duration="3206000" />
       <workItem from="1710783525369" duration="8276000" />
       <workItem from="1710848075945" duration="496000" />
-      <workItem from="1710855927390" duration="19650000" />
-    </task>
-    <task id="LOCAL-00046" summary="arreglos">
-      <option name="closed" value="true" />
-      <created>1710863519902</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1710863519902</updated>
-    </task>
-    <task id="LOCAL-00047" summary="ajustes">
-      <option name="closed" value="true" />
-      <created>1710863756774</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1710863756774</updated>
-    </task>
-    <task id="LOCAL-00048" summary="crecimeinto">
-      <option name="closed" value="true" />
-      <created>1710864552794</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1710864552794</updated>
-    </task>
-    <task id="LOCAL-00049" summary="crecimeinto">
-      <option name="closed" value="true" />
-      <created>1710864636547</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1710864636547</updated>
-    </task>
-    <task id="LOCAL-00050" summary="ajuste">
-      <option name="closed" value="true" />
-      <created>1710864741799</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1710864741799</updated>
-    </task>
-    <task id="LOCAL-00051" summary="crecimiento">
-      <option name="closed" value="true" />
-      <created>1710864820567</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1710864820567</updated>
-    </task>
-    <task id="LOCAL-00052" summary="crecimiento">
-      <option name="closed" value="true" />
-      <created>1710864995371</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1710864995371</updated>
-    </task>
-    <task id="LOCAL-00053" summary="evento">
-      <option name="closed" value="true" />
-      <created>1710865051297</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1710865051297</updated>
-    </task>
-    <task id="LOCAL-00054" summary="eventos">
-      <option name="closed" value="true" />
-      <created>1710865261012</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1710865261012</updated>
-    </task>
-    <task id="LOCAL-00055" summary="eventos">
-      <option name="closed" value="true" />
-      <created>1710865324480</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1710865324481</updated>
-    </task>
-    <task id="LOCAL-00056" summary="gestión de simulador">
-      <option name="closed" value="true" />
-      <created>1710866059525</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1710866059525</updated>
+      <workItem from="1710855927390" duration="21365000" />
     </task>
     <task id="LOCAL-00057" summary="main">
       <option name="closed" value="true" />
@@ -476,7 +387,95 @@
       <option name="project" value="LOCAL" />
       <updated>1710881810541</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="arreglos">
+      <option name="closed" value="true" />
+      <created>1710883650143</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1710883650143</updated>
+    </task>
+    <task id="LOCAL-00096" summary="arreglos organismos">
+      <option name="closed" value="true" />
+      <created>1710884413632</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1710884413632</updated>
+    </task>
+    <task id="LOCAL-00097" summary="arreglos plantas">
+      <option name="closed" value="true" />
+      <created>1710884505930</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1710884505930</updated>
+    </task>
+    <task id="LOCAL-00098" summary="arreglos plantas">
+      <option name="closed" value="true" />
+      <created>1710884512387</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1710884512387</updated>
+    </task>
+    <task id="LOCAL-00099" summary="arreglos animal">
+      <option name="closed" value="true" />
+      <created>1710884553381</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1710884553381</updated>
+    </task>
+    <task id="LOCAL-00100" summary="arreglos ambiente">
+      <option name="closed" value="true" />
+      <created>1710884643451</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1710884643451</updated>
+    </task>
+    <task id="LOCAL-00101" summary="arreglos ambiente">
+      <option name="closed" value="true" />
+      <created>1710884665045</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1710884665045</updated>
+    </task>
+    <task id="LOCAL-00102" summary="arreglos">
+      <option name="closed" value="true" />
+      <created>1710884776643</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1710884776643</updated>
+    </task>
+    <task id="LOCAL-00103" summary="arreglos">
+      <option name="closed" value="true" />
+      <created>1710884833978</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1710884833978</updated>
+    </task>
+    <task id="LOCAL-00104" summary="arreglos y crecimiento">
+      <option name="closed" value="true" />
+      <created>1710885171812</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1710885171812</updated>
+    </task>
+    <task id="LOCAL-00105" summary="arreglos y crecimiento">
+      <option name="closed" value="true" />
+      <created>1710885179655</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1710885179655</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -494,11 +493,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="a" />
-    <MESSAGE value="siulador" />
-    <MESSAGE value="usuario" />
-    <MESSAGE value="usuario y correciones" />
-    <MESSAGE value="si" />
     <MESSAGE value="resultados salud" />
     <MESSAGE value="interfaz de usuarios" />
     <MESSAGE value="visualizacion de datos" />
@@ -517,8 +511,14 @@
     <MESSAGE value="ajustes organismo" />
     <MESSAGE value="ajustes simulador de dinamicas" />
     <MESSAGE value="arreglso finales" />
+    <MESSAGE value="arreglos organismos" />
+    <MESSAGE value="arreglos plantas" />
+    <MESSAGE value="arreglos animal" />
+    <MESSAGE value="arreglos ambiente" />
+    <MESSAGE value="arreglos interacciones" />
     <MESSAGE value="arreglos" />
-    <option name="LAST_COMMIT_MESSAGE" value="arreglos" />
+    <MESSAGE value="arreglos y crecimiento" />
+    <option name="LAST_COMMIT_MESSAGE" value="arreglos y crecimiento" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
