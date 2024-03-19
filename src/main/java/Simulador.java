@@ -1,3 +1,6 @@
+import AnálisisAvanzado.IntegracionFunciones;
+import AnálisisAvanzado.ResoluciónProblemas;
+import AnálisisAvanzado.VisualizacionDatos;
 import ModeladoDeEntidades.*;
 import GestiónUsuariosYSimulaciones.*;
 import SimuladorDeDinámicas.*;
@@ -7,6 +10,56 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class Simulador {
+
+    Scanner scanner = new Scanner(System.in);
+    private Simulador simulador = new Simulador();
+    private Autenticacion autenticacion;
+    private VisualizacionDatos datos;
+    private IntegracionFunciones funciones;
+    private ResoluciónProblemas problemas;
+    private Random random = new Random();
+    private EventoAleatorio[] eventos = {new E_DesastreNatural(), new E_Enfermedad(), new E_CambioClimatico()};
+
+    public void verOrganismos() {
+        System.out.println("----- ANIMALES -----");
+        for (Animal animal : Animal.getAnimalesList()) {
+            System.out.println(animal.toString());
+        }
+
+        System.out.println("----- PLANTAS -----");
+        for (Planta planta : Planta.getPlantasList()) {
+            System.out.println(planta.toString());
+        }
+    }
+    public Simulador() {
+        this.autenticacion = new Autenticacion();
+        this.datos = new VisualizacionDatos();
+        this.funciones = new IntegracionFunciones();
+        this.problemas = new ResoluciónProblemas();
+
+        Animal carnivoroMacho1 = new Animal("Leon-M", new Organismo.Posicion(0, 0), 100, 5, true, "Carnívoro", 50);
+        Animal carnivoroHembra1 = new Animal("León-H", new Organismo.Posicion(1, 1), 100, 5, true, "Carnívoro", 45);
+        Animal carnivoroMacho2 = new Animal("Beluga-M", new Organismo.Posicion(2, 2), 100, 5, true, "Carnívoro", 50);
+        Animal carnivoroHembra2 = new Animal("Beluga-H", new Organismo.Posicion(3, 3), 100, 5, true, "Carnívoro", 45);
+
+        Animal herbivoroMacho1 = new Animal("Rinoceronte-M", new Organismo.Posicion(2, 2), 100, 5, true, "Herbívoro", 50);
+        Animal herbivoroHembra1 = new Animal("Rinoceronte-H",new Organismo.Posicion(3, 3), 100, 5, true, "Herbívoro", 45);
+        Animal herbivoroMacho2 = new Animal("Tortuga-M", new Organismo.Posicion(2, 2), 100, 5, true, "Herbívoro", 50);
+        Animal herbivoroHembra2 = new Animal("Tortuga-H", new Organismo.Posicion(3, 3), 100, 5, true, "Herbívoro", 45);
+
+        Animal omnivoroMacho1 = new Animal("Erizos-M", new Organismo.Posicion(4, 4), 100, 5, true, "Omnívoro", 50);
+        Animal omnivoroHembra1 = new Animal("Erizos-H", new Organismo.Posicion(5, 5), 100, 5, true, "Omnívoro", 45);
+        Animal omnivoroMacho2 = new Animal("Avestruz-M", new Organismo.Posicion(6, 6), 100, 5, true, "Omnívoro", 50);
+        Animal omnivoroHembra2 = new Animal("Avestruz-H", new Organismo.Posicion(7, 7), 100, 5, true, "Omnívoro", 45);
+
+        Planta planta1 = new Planta("Tulipán", new Organismo.Posicion(0, 0), 100, 5, true, "Flor", "Bosque");
+        Planta planta2 = new Planta("Almendro", new Organismo.Posicion(1, 1), 100, 5, true, "Árbol", "Bosque");
+        Planta planta3 = new Planta("Cactus", new Organismo.Posicion(2, 2), 100, 5, true, "Suculentas", "Sabana");
+        Planta planta4 = new Planta("Marihuana", new Organismo.Posicion(3, 3), 100, 5, true, "Droga", "Bosque");
+        Planta planta5 = new Planta("Limonero", new Organismo.Posicion(4, 4), 100, 5, true, "Fruto", "Bosque");
+
+    }
+
     public static void main(String[] args) {
         System.out.println("----- GESTOR DE SIMULACIONES -----");
         System.out.println("Bienvenido al gestor de simulaciones, por favor, seleccione una opción:");
@@ -26,11 +79,9 @@ public class Simulador {
         switch (opcion) {
             case 1: // invitado
                 System.out.println("----- INVITADO -----");
-                System.out.println("Bienvenido al gestor de simulaciones como invitado.");
-                System.out.println("1. Crear un organismo");
-                System.out.println("2. Simular dinámicas de poblaciones");
-                System.out.println("3. Volver al menú principal");
-
+                System.out.println("Bienvenido al gestor de simulaciones como invitado, si desea realizar una simulación, por favor, regístrese.");
+                System.out.println("1. Ver organismos");
+                System.out.println("2. Volver al menú principal");
 
                 // Leer la opción seleccionada por el usuario
                 int opcionInvitado = scanner.nextInt();
@@ -39,101 +90,12 @@ public class Simulador {
                 // Según la opción seleccionada por el usuario, ejecutar el método correspondiente
                 switch (opcionInvitado) {
                     case 1:
-                        System.out.println("----- CREAR ORGANISMO -----");
-                        System.out.println("Por favor, seleccione el tipo de organismo que desea crear:");
-                        System.out.println("1. Planta");
-                        System.out.println("2. Animal");
-                        System.out.println("3. Volver al menú principal");
-
-                        int opcionCrearOrganismo = scanner.nextInt();
-                        scanner.nextLine(); // consume the newline
-
-                        switch (opcionCrearOrganismo) {
-                            case 1: // Lógica para crear una nueva planta
-                        System.out.println ( "Ingrese el nombre de la planta:" );
-                        String nombre = scanner.next ();
-                        System.out.println ( "Ingrese el tipo de la planta:" );
-                        String tipo = scanner.next ();
-                        System.out.println ( "Ingrese la altura de la planta:" );
-                        double altura = scanner.nextDouble ();
-                        System.out.println ( "Ingrese el estado de salud de la planta " + "(saludable, enferma, en peligro de extinción):" );
-                        String salud = scanner.next ();
-                        System.out.println ( "Ingrese el estado de reproducción de la planta (true/false):" );
-                        boolean estadoReproduccion = scanner.nextBoolean ();
-
-                        // Crear una nueva instancia de Planta con los datos proporcionados
-                        Planta nuevaPlanta = new Planta (0, 0, 0, 100, estadoReproduccion, nombre, false, false, true);
-                        System.out.println ( "¡Planta creada exitosamente!" );
-                     break;
-
-                    case 2: // Lógica para crear un nuevo animal
-                        System.out.println ( "Ingrese el nombre del animal:" );
-                        String nombreAnimal = scanner.next ();
-                        System.out.println ( "Ingrese la especie del animal:" );
-                        String especieAnimal = scanner.next ();
-                        System.out.println ( "Ingrese la edad del animal:" );
-                        int edadAnimal = scanner.nextInt ();
-                        System.out.println ( "Ingrese el estado de salud del animal (true para saludable, false para no saludable):" );
-                        boolean saludAnimal = scanner.nextBoolean ();
-                        System.out.println ( "Ingrese el estado de reproducción del animal (true/false):" );
-                        boolean estadoReproduccionAnimal = scanner.nextBoolean ();
-
-                        // Crear una nueva instancia de Animal con los datos proporcionados
-                        Animal nuevoAnimal = new Animal (0, 0, edadAnimal, 100, estadoReproduccionAnimal, nombreAnimal, false, false, saludAnimal);
-                        System.out.println ( "¡Animal creado exitosamente!" );
+                        simulador.verOrganismos();
                         break;
-
-                    case 3:
-                        System.out.println("Volviendo al menú principal...");
+                    case 2: // SALIR
+                        System.out.println("Saliendo del gestor de simulaciones...");
                         break;
-
-                    default:
-                        System.out.println("Opción no válida.");
                 }
-
-                // Preguntar al usuario cuántos días quiere simular
-                System.out.println("¿Cuántos días te gustaría simular?");
-                int numDias = scanner.nextInt();
-
-                // Crear una población inicial
-                ArrayList<Organismo> poblacion = new ArrayList<>();
-
-                // Crear una instancia de la clase Crecimiento
-                Especie especie = new Especie("Especie", 1, 1);
-                Crecimiento crecimiento = new Crecimiento(especie, poblacion.size());
-
-                // Crear una lista de eventos
-                ArrayList<Eventos> eventos = new ArrayList<>();
-                // Solicitar al usuario la probabilidad de cambio climático
-                System.out.println("Por favor, introduce la probabilidad de cambio climático:");
-                int probabilidadCambioClimatico = scanner.nextInt();
-
-                // Solicitar al usuario la probabilidad de muerte
-                System.out.println("Por favor, introduce la probabilidad de muerte:");
-                int probabilidadMuerte = scanner.nextInt();
-
-                // Crear instancias de los eventos
-                E_CambioClimatico cambioClimatico = new E_CambioClimatico(probabilidadCambioClimatico, probabilidadMuerte);
-                E_DesastreNatural desastreNatural = new E_DesastreNatural(probabilidadCambioClimatico, probabilidadMuerte);
-                E_Enfermedad enfermedad = new E_Enfermedad(probabilidadCambioClimatico, probabilidadMuerte);
-
-                // Añadir los eventos a la lista de eventos
-                eventos.add(cambioClimatico);
-                eventos.add(desastreNatural);
-                eventos.add(enfermedad);
-
-                for (int dia = 1; dia <= numDias; dia++) {
-                    System.out.println("----- DÍA " + dia + " -----");
-
-                    crecimiento.crecer();
-                    crecimiento.reproducirse();
-
-                    Eventos eventoAleatorio = eventos.get(new Random().nextInt(eventos.size()));
-                    eventoAleatorio.aplicarEvento(poblacion);
-
-                    for (Organismo organismo : poblacion) {
-                        System.out.println(organismo);
-                    } } break;
 
             case 2: // investigador
                 System.out.println("----- INVESTIGADOR -----");
