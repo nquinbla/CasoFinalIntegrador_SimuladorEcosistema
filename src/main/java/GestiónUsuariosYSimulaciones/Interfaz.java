@@ -14,5 +14,9 @@ public class Interfaz {
         registro = new Registro();
     }
 
-    // Método para mostrar la interfaz de usuario
+    // Getters y setters
+    public Autenticacion getAutenticacion() {return autenticacion;}
+    public Registro getRegistro() {return registro;}
+
+
 }
