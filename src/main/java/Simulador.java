@@ -57,18 +57,18 @@ public class Simulador {
 
                     case 2: // Lógica para crear un nuevo animal
                         System.out.println ( "Ingrese el nombre del animal:" );
-                        String nombre = scanner.next ();
+                        String nombreAnimal = scanner.next ();
                         System.out.println ( "Ingrese la especie del animal:" );
-                        String especie = scanner.next ();
+                        String especieAnimal = scanner.next ();
                         System.out.println ( "Ingrese la edad del animal:" );
-                        int edad = scanner.nextInt ();
-                        System.out.println ( "Ingrese el género del animal:" );
-                        String genero = scanner.next ();
-                        System.out.println ( "Ingrese el color del animal:" );
-                        String color = scanner.next ();
+                        int edadAnimal = scanner.nextInt ();
+                        System.out.println ( "Ingrese el estado de salud del animal (true para saludable, false para no saludable):" );
+                        boolean saludAnimal = scanner.nextBoolean ();
+                        System.out.println ( "Ingrese el estado de reproducción del animal (true/false):" );
+                        boolean estadoReproduccionAnimal = scanner.nextBoolean ();
 
                         // Crear una nueva instancia de Animal con los datos proporcionados
-                        Animal nuevoAnimal = new Animal ( nombre, especie, edad, genero, color );
+                        Animal nuevoAnimal = new Animal (0, 0, edadAnimal, 100, estadoReproduccionAnimal, nombreAnimal, false, false, saludAnimal);
                         System.out.println ( "¡Animal creado exitosamente!" );
                         break;
 
