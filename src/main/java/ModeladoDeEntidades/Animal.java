@@ -8,7 +8,7 @@ public class Animal extends Organismo {
     protected String especie;
     protected String sexo;
 
-    // Lista de todos los animales
+    //
     public static ArrayList<Animal> todosLosAnimales = new ArrayList<>();
     static {
         todosLosAnimales.add(new Animal(2, 3, 24, 100, true, "León", "Panthera leo", "Macho"));
@@ -45,6 +45,6 @@ public class Animal extends Organismo {
     // Método Override
     @Override
     public String toString() {
-        return "Animal{" + "nombre=" + nombre + ", especie=" + especie + ", sexo=" + sexo + '}';
+        return nombre +" " + sexo + " de la especie " + especie + " con " + salud + " de salud " + " y " + edad + " años de edad ";
     }
 }

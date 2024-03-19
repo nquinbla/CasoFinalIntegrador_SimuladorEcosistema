@@ -13,6 +13,7 @@ public class Planta extends Organismo {
 
     // Lista de todas las plantas
     public static ArrayList<Planta> todasLasPlantas = new ArrayList<>();
+
     static {
         todasLasPlantas.add(new Planta(2, 3, 24, 100, true, "Rosa", "Rosa", 100, 100, 100));
         todasLasPlantas.add(new Planta(2, 3, 24, 100, true, "Girasol", "Helianthus annuus", 100, 100, 100));
@@ -38,24 +39,49 @@ public class Planta extends Organismo {
 
 
     // Getters y setters de la clase Planta
-    public String getNombre() {return nombre;}
-    public void setNombre(String nombre) {this.nombre = nombre;}
+    public String getNombre() {
+        return nombre;
+    }
 
-    public String getEspecie() {return especie;}
-    public void setEspecie(String especie) {this.especie = especie;}
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
 
-    public int getCantidadAgua() {return cantidadAgua;}
-    public void setCantidadAgua(int cantidadAgua) {this.cantidadAgua = cantidadAgua;}
+    public String getEspecie() {
+        return especie;
+    }
 
-    public int getCantidadLuz() {return cantidadLuz;}
-    public void setCantidadLuz(int cantidadLuz) {this.cantidadLuz = cantidadLuz;}
+    public void setEspecie(String especie) {
+        this.especie = especie;
+    }
 
-    public int getCantidadNutrientes() {return cantidadNutrientes;}
-    public void setCantidadNutrientes(int cantidadNutrientes) {this.cantidadNutrientes = cantidadNutrientes;}
+    public int getCantidadAgua() {
+        return cantidadAgua;
+    }
+
+    public void setCantidadAgua(int cantidadAgua) {
+        this.cantidadAgua = cantidadAgua;
+    }
+
+    public int getCantidadLuz() {
+        return cantidadLuz;
+    }
+
+    public void setCantidadLuz(int cantidadLuz) {
+        this.cantidadLuz = cantidadLuz;
+    }
+
+    public int getCantidadNutrientes() {
+        return cantidadNutrientes;
+    }
+
+    public void setCantidadNutrientes(int cantidadNutrientes) {
+        this.cantidadNutrientes = cantidadNutrientes;
+    }
 
     // Método Override
     @Override
     public String toString() {
-        return "Planta{" + "nombre=" + nombre + ", especie=" + especie + '}';
+        return nombre + " de la especie " + especie + " con " + salud + " de salud " + " y " + edad + " años de edad ";
     }
 }

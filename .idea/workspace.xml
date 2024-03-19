@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="182db69b-6fdc-4951-b319-29bd34b03cd7" name="Changes" comment="MAIN invitado">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ModeladoDeEntidades/Ambiente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ModeladoDeEntidades/Ambiente.java" afterDir="false" />
+    <list default="true" id="182db69b-6fdc-4951-b319-29bd34b03cd7" name="Changes" comment="ajustes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ModeladoDeEntidades/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ModeladoDeEntidades/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ModeladoDeEntidades/Planta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ModeladoDeEntidades/Planta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Simulador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Simulador.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,39 +83,7 @@
       <workItem from="1710774935067" duration="3206000" />
       <workItem from="1710783525369" duration="8276000" />
       <workItem from="1710848075945" duration="496000" />
-      <workItem from="1710855927390" duration="12800000" />
-    </task>
-    <task id="LOCAL-00022" summary="arreglos">
-      <option name="closed" value="true" />
-      <created>1710777239573</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1710777239573</updated>
-    </task>
-    <task id="LOCAL-00023" summary="arreglos">
-      <option name="closed" value="true" />
-      <created>1710777333534</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1710777333534</updated>
-    </task>
-    <task id="LOCAL-00024" summary="arreglos">
-      <option name="closed" value="true" />
-      <created>1710783937726</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1710783937726</updated>
-    </task>
-    <task id="LOCAL-00025" summary="si">
-      <option name="closed" value="true" />
-      <created>1710785424377</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1710785424377</updated>
+      <workItem from="1710855927390" duration="13545000" />
     </task>
     <task id="LOCAL-00026" summary="si">
       <option name="closed" value="true" />
@@ -477,7 +445,39 @@
       <option name="project" value="LOCAL" />
       <updated>1710875059465</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="ajustes">
+      <option name="closed" value="true" />
+      <created>1710875725485</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1710875725485</updated>
+    </task>
+    <task id="LOCAL-00072" summary="ajustes">
+      <option name="closed" value="true" />
+      <created>1710875957715</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1710875957715</updated>
+    </task>
+    <task id="LOCAL-00073" summary="ajustes">
+      <option name="closed" value="true" />
+      <created>1710875988822</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1710875988822</updated>
+    </task>
+    <task id="LOCAL-00074" summary="ajustes">
+      <option name="closed" value="true" />
+      <created>1710876062004</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1710876062004</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -514,8 +514,8 @@
     <MESSAGE value="Merge remote-tracking branch 'origin/master'" />
     <MESSAGE value="gestión de simulador" />
     <MESSAGE value="main" />
-    <MESSAGE value="ajustes" />
     <MESSAGE value="MAIN invitado" />
-    <option name="LAST_COMMIT_MESSAGE" value="MAIN invitado" />
+    <MESSAGE value="ajustes" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajustes" />
   </component>
 </project>
