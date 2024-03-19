@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="182db69b-6fdc-4951-b319-29bd34b03cd7" name="Changes" comment="crecimiento" />
+    <list default="true" id="182db69b-6fdc-4951-b319-29bd34b03cd7" name="Changes" comment="evento">
+      <change afterPath="$PROJECT_DIR$/src/main/java/SimuladorDeDinámicas/E_DesastreNatural.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SimuladorDeDinámicas/E_Enfermedad.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,23 +80,7 @@
       <workItem from="1710774935067" duration="3206000" />
       <workItem from="1710783525369" duration="8276000" />
       <workItem from="1710848075945" duration="496000" />
-      <workItem from="1710855927390" duration="5152000" />
-    </task>
-    <task id="LOCAL-00003" summary="siulador">
-      <option name="closed" value="true" />
-      <created>1709812513674</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1709812513674</updated>
-    </task>
-    <task id="LOCAL-00004" summary="siulador">
-      <option name="closed" value="true" />
-      <created>1709812567907</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1709812567907</updated>
+      <workItem from="1710855927390" duration="5502000" />
     </task>
     <task id="LOCAL-00005" summary="siulador">
       <option name="closed" value="true" />
@@ -471,7 +458,23 @@
       <option name="project" value="LOCAL" />
       <updated>1710864820567</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="crecimiento">
+      <option name="closed" value="true" />
+      <created>1710864995371</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1710864995371</updated>
+    </task>
+    <task id="LOCAL-00053" summary="evento">
+      <option name="closed" value="true" />
+      <created>1710865051297</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1710865051297</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -504,6 +507,7 @@
     <MESSAGE value="crecimeinto" />
     <MESSAGE value="ajuste" />
     <MESSAGE value="crecimiento" />
-    <option name="LAST_COMMIT_MESSAGE" value="crecimiento" />
+    <MESSAGE value="evento" />
+    <option name="LAST_COMMIT_MESSAGE" value="evento" />
   </component>
 </project>
