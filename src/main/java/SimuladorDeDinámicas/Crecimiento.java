@@ -3,13 +3,14 @@ package SimuladorDeDinámicas;
 import ModeladoDeEntidades.*;
 import java.util.ArrayList;
 
+// Clase Crecimiento
 public class Crecimiento {
     private ArrayList<Organismo> poblacion;
 
-    public Crecimiento(ArrayList<Organismo> poblacion) {
-        this.poblacion = poblacion;
-    }
+    // Constructor de la clase Crecimiento
+    public Crecimiento(ArrayList<Organismo> poblacion) {this.poblacion = poblacion;}
 
+    // Atributos de la clase Crecimiento para los animales
     public void crecimientoPoblacionAnimal() {
         ArrayList<Animal> nuevosAnimales = new ArrayList<>();
 
@@ -29,6 +30,7 @@ public class Crecimiento {
         poblacion.addAll(nuevosAnimales);
     }
 
+    // Atributos de la clase Crecimiento para las plantas
     public void crecimientoPoblacionPlanta() {
         ArrayList<Planta> nuevasPlantas = new ArrayList<>();
 
