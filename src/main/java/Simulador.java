@@ -38,8 +38,7 @@ public class Simulador {
 
                 // Según la opción seleccionada por el usuario, ejecutar el método correspondiente
                 switch (opcionInvitado) {
-                    case 1:
-                        // Lógica para crear una nueva planta
+                    case 1: // Lógica para crear una nueva planta
                         System.out.println ( "Ingrese el nombre de la planta:" );
                         String nombre = scanner.next ();
                         System.out.println ( "Ingrese el tipo de la planta:" );
