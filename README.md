@@ -1,6 +1,10 @@
 # Caso Final Integrador : Desarrollo de un Simulador de Ecosistema Inteligente
+Caso Final Integrador 3 de Nerea Quintanilla Blanco, desarrollo de un simulador de ecosistema inteligente.
 
 LINK: https://github.com/nquinbla/CasoFinalIntegrador_EcosistemaInteligente.git
+
+## DESCRIPCIÓN
+
 
 ## MÓDULOS DEL SISTEMA
 
