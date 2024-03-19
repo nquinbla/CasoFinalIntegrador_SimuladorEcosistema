@@ -1,4 +1,8 @@
 import ModeladoDeEntidades.*;
+import SimuladorDeDinámicas.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 
