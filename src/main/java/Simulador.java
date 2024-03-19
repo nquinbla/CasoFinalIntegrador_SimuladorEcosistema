@@ -38,7 +38,18 @@ public class Simulador {
 
                 // Según la opción seleccionada por el usuario, ejecutar el método correspondiente
                 switch (opcionInvitado) {
-                    case 1: // Lógica para crear una nueva planta
+                    case 1:
+                        System.out.println("----- CREAR ORGANISMO -----");
+                        System.out.println("Por favor, seleccione el tipo de organismo que desea crear:");
+                        System.out.println("1. Planta");
+                        System.out.println("2. Animal");
+                        System.out.println("3. Volver al menú principal");
+
+                        int opcionCrearOrganismo = scanner.nextInt();
+                        scanner.nextLine(); // consume the newline
+
+                        switch (opcionCrearOrganismo) {
+                            case 1: // Lógica para crear una nueva planta
                         System.out.println ( "Ingrese el nombre de la planta:" );
                         String nombre = scanner.next ();
                         System.out.println ( "Ingrese el tipo de la planta:" );
@@ -103,8 +114,8 @@ public class Simulador {
 
                 // Crear instancias de los eventos
                 E_CambioClimatico cambioClimatico = new E_CambioClimatico(probabilidadCambioClimatico, probabilidadMuerte);
-                E_DesastreNatural desastreNatural = new E_DesastreNatural(probabilidadCambioClimatico, probabilidadMuerte); // Asumiendo que las mismas probabilidades se aplican para este evento
-                E_Enfermedad enfermedad = new E_Enfermedad(probabilidadCambioClimatico, probabilidadMuerte); // Asumiendo que las mismas probabilidades se aplican para este evento
+                E_DesastreNatural desastreNatural = new E_DesastreNatural(probabilidadCambioClimatico, probabilidadMuerte);
+                E_Enfermedad enfermedad = new E_Enfermedad(probabilidadCambioClimatico, probabilidadMuerte);
 
                 // Añadir los eventos a la lista de eventos
                 eventos.add(cambioClimatico);
@@ -154,4 +165,4 @@ public class Simulador {
                 System.out.println("Opción no válida.");
         }
     }
-}
+} }

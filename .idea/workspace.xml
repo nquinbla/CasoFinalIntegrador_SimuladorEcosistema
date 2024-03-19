@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="182db69b-6fdc-4951-b319-29bd34b03cd7" name="Changes" comment="arreglso finales">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Simulador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Simulador.java" afterDir="false" />
+    <list default="true" id="182db69b-6fdc-4951-b319-29bd34b03cd7" name="Changes" comment="arreglos">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,63 +81,7 @@
       <workItem from="1710774935067" duration="3206000" />
       <workItem from="1710783525369" duration="8276000" />
       <workItem from="1710848075945" duration="496000" />
-      <workItem from="1710855927390" duration="16782000" />
-    </task>
-    <task id="LOCAL-00038" summary="prueba main 1 (arreglos)">
-      <option name="closed" value="true" />
-      <created>1710792193311</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1710792193311</updated>
-    </task>
-    <task id="LOCAL-00039" summary="prueba main 1 (arreglos)">
-      <option name="closed" value="true" />
-      <created>1710792224642</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1710792224642</updated>
-    </task>
-    <task id="LOCAL-00040" summary="prueba main 1 (arreglos)">
-      <option name="closed" value="true" />
-      <created>1710792357052</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1710792357052</updated>
-    </task>
-    <task id="LOCAL-00041" summary="prueba main 1">
-      <option name="closed" value="true" />
-      <created>1710796078308</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1710796078308</updated>
-    </task>
-    <task id="LOCAL-00042" summary="arreglos">
-      <option name="closed" value="true" />
-      <created>1710862451029</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1710862451029</updated>
-    </task>
-    <task id="LOCAL-00043" summary="arreglos">
-      <option name="closed" value="true" />
-      <created>1710862652501</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1710862652501</updated>
-    </task>
-    <task id="LOCAL-00044" summary="arreglos">
-      <option name="closed" value="true" />
-      <created>1710863390620</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1710863390620</updated>
+      <workItem from="1710855927390" duration="18200000" />
     </task>
     <task id="LOCAL-00045" summary="arreglos">
       <option name="closed" value="true" />
@@ -475,7 +419,63 @@
       <option name="project" value="LOCAL" />
       <updated>1710879685678</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="arreglso finales">
+      <option name="closed" value="true" />
+      <created>1710879949480</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1710879949480</updated>
+    </task>
+    <task id="LOCAL-00088" summary="arreglso finales">
+      <option name="closed" value="true" />
+      <created>1710879958961</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1710879958961</updated>
+    </task>
+    <task id="LOCAL-00089" summary="arreglso finales">
+      <option name="closed" value="true" />
+      <created>1710879979379</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1710879979379</updated>
+    </task>
+    <task id="LOCAL-00090" summary="arreglso finales">
+      <option name="closed" value="true" />
+      <created>1710880166680</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1710880166680</updated>
+    </task>
+    <task id="LOCAL-00091" summary="arreglso finales">
+      <option name="closed" value="true" />
+      <created>1710880314681</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1710880314681</updated>
+    </task>
+    <task id="LOCAL-00092" summary="arreglos">
+      <option name="closed" value="true" />
+      <created>1710880456221</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1710880456221</updated>
+    </task>
+    <task id="LOCAL-00093" summary="arreglos">
+      <option name="closed" value="true" />
+      <created>1710880493851</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1710880493851</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -503,7 +503,6 @@
     <MESSAGE value="visualizacion de datos" />
     <MESSAGE value="prueba main 1 (arreglos)" />
     <MESSAGE value="prueba main 1" />
-    <MESSAGE value="arreglos" />
     <MESSAGE value="crecimeinto" />
     <MESSAGE value="ajuste" />
     <MESSAGE value="crecimiento" />
@@ -517,6 +516,7 @@
     <MESSAGE value="ajustes organismo" />
     <MESSAGE value="ajustes simulador de dinamicas" />
     <MESSAGE value="arreglso finales" />
-    <option name="LAST_COMMIT_MESSAGE" value="arreglso finales" />
+    <MESSAGE value="arreglos" />
+    <option name="LAST_COMMIT_MESSAGE" value="arreglos" />
   </component>
 </project>
