@@ -7,49 +7,56 @@ public class Ambiente {
     protected String clima;
     protected String terreno;
     protected int recursosDisponibles;
-
-    // Lista de todos los ambientes
-    public static ArrayList<Ambiente> todosLosAmbientes = new ArrayList<>();
-    static {
-        todosLosAmbientes.add(new Ambiente("Tropical", "Selva", 1000));
-        todosLosAmbientes.add(new Ambiente("Desértico", "Desierto", 1000));
-        todosLosAmbientes.add(new Ambiente("Polar", "Tundra", 1000));
-        todosLosAmbientes.add(new Ambiente("Templado", "Bosque", 1000));
-        todosLosAmbientes.add(new Ambiente("Subtropical", "Pradera", 1000));
-        todosLosAmbientes.add(new Ambiente("Templado", "Montaña", 1000));
-    }
+    protected int MaxPosX;
+    protected int MaxPosY;
 
     // Constructor de la clase Ambiente
-    public Ambiente(String clima, String terreno, int recursosDisponibles) {
+    public Ambiente(String clima, String terreno, int recursosDisponibles, int MaxPosX, int MaxPosY) {
         this.clima = clima;
         this.terreno = terreno;
         this.recursosDisponibles = recursosDisponibles;
+        this.MaxPosX = MaxPosX;
+        this.MaxPosY = MaxPosY;
     }
 
-    // Getters y setters de la clase Ambiente
-    public String getClima() {
-        return clima;
+    // Métodos
+    public void agregarOrganismo(Organismo organismo) {
+        // Lógica para agregar un organismo al ambiente
     }
 
-    public void setClima(String clima) {
-        this.clima = clima;
+    public void pasoDelTiempo() {
+        // Simular interacciones entre los organismos y el ambiente
     }
 
-    public String getTerreno() {return terreno;}
-
-    public void setTerreno(String terreno) {
-        this.terreno = terreno;
+    public void simularPredacion(Organismo depredador, Organismo presa) {
+        // Simulación básica: el depredador reduce la salud de la presa
+        presa.salud -= 20;
+        if (presa.salud <= 0) {
+            presa.morir(); // La presa muere
+        }
     }
 
-    public int getRecursosDisponibles() {
-        return recursosDisponibles;
+    public void simularCompetenciaRecursos(Organismo organismo1, Organismo organismo2) {
+        // Simulación básica: ambos organismos compiten por los recursos
     }
 
-    public void setRecursosDisponibles(int recursosDisponibles) {this.recursosDisponibles = recursosDisponibles;}
+    public void simularPolinizacion(Organismo planta, Organismo polinizador) {
+        // Simulación básica: el polinizador ayuda en la polinización de la planta
+    }
 
-    // Método Override
-    @Override
-    public String toString() {
-        return "Ambiente{" + "clima=" + clima + ", terreno=" + terreno + ", recursosDisponibles=" + recursosDisponibles + '}';
+    public int obtenerRecursos(int cantidad) {
+        // Método para que los organismos obtengan recursos del ambiente
+        return recursosDisponibles >= cantidad ? cantidad : recursosDisponibles;
+    }
+
+    public boolean validarPosicion(int posX, int posY) {
+        // Método para verificar si una posición está dentro de los límites del ambiente
+        return posX >= 0 && posX < MaxPosX && posY >= 0 && posY < MaxPosY;
+    }
+
+    public int buscarComida(Animal animal) {
+        // Método para simular la búsqueda de comida por parte de un animal
+        // Devuelve la cantidad de recursos encontrados
+        return (int) (Math.random() * 21); // Se simula encontrando una cantidad aleatoria entre 0 y 20
     }
 }
