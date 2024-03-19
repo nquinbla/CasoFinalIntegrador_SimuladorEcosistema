@@ -21,7 +21,6 @@ public abstract  class Organismo {
     public int getX() {
         return x;
     }
-
     public void setX(int x) {
         this.x = x;
     }
@@ -29,7 +28,6 @@ public abstract  class Organismo {
     public int getY() {
         return y;
     }
-
     public void setY(int y) {
         this.y = y;
     }
@@ -37,7 +35,6 @@ public abstract  class Organismo {
     public int getEdad() {
         return edad;
     }
-
     public void setEdad(int edad) {
         this.edad = edad;
     }
@@ -45,7 +42,6 @@ public abstract  class Organismo {
     public int getSalud() {
         return salud;
     }
-
     public void setSalud(int salud) {
         this.salud = salud;
     }
@@ -53,7 +49,6 @@ public abstract  class Organismo {
     public boolean isEstadoReproductivo() {
         return EstadoReproductivo;
     }
-
     public void setEstadoReproductivo(boolean EstadoReproductivo) {
         this.EstadoReproductivo = EstadoReproductivo;
     }

@@ -2,37 +2,31 @@ package ModeladoDeEntidades;
 
 // Clase Animal
 public class Animal extends Organismo {
-    protected boolean depredador;
-    protected boolean presa;
+    protected String nombre;
+    protected String especie;
+    protected String sexo;
 
     // Constructor de la clase Animal
-    public Animal(int x, int y, int edad, int salud, boolean EstadoReproductivo, boolean depredador, boolean presa) {
+    public Animal(int x, int y, int edad, int salud, boolean EstadoReproductivo, String nombre, String especie, String sexo) {
         super(x, y, edad, salud, EstadoReproductivo);
-        this.depredador = depredador;
-        this.presa = presa;
+        this.nombre = nombre;
+        this.especie = especie;
+        this.sexo = sexo;
     }
 
     // Getters y setters de la clase Animal
-    public boolean isDepredador() {
-        return depredador;
-    }
+    public String getNombre() {return nombre;}
+    public void setNombre(String nombre) {this.nombre = nombre;}
 
-    public void setDepredador(boolean depredador) {
-        this.depredador = depredador;
-    }
+    public String getEspecie() {return especie;}
+    public void setEspecie(String especie) {this.especie = especie;}
 
-    public boolean isPresa() {
-        return presa;
-    }
-
-    public void setPresa(boolean presa) {
-        this.presa = presa;
-    }
+    public String getSexo() {return sexo;}
+    public void setSexo(String sexo) {this.sexo = sexo;}
 
     // Método Override
     @Override
     public String toString() {
-        return "Animal{" + "depredador=" + depredador + ", presa=" + presa + '}';
+        return "Animal{" + "nombre=" + nombre + ", especie=" + especie + ", sexo=" + sexo + '}';
     }
-
 }
