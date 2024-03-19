@@ -23,11 +23,18 @@ public class Simulador {
         // Según la opción seleccionada por el usuario, ejecutar el método correspondiente
         switch (opcion) { // invitado
             case 1:
+                System.out.println("----- INVITADO -----");
+                System.out.println("Bienvenido al gestor de simulaciones como invitado.");
 
                 break;
 
 
             case 2: // investigador
+                System.out.println("----- INVESTIGADOR -----");
+                System.out.println("Bienvenido al gestor de simulaciones como investigador.");
+
+
+
 
                 break;
 
