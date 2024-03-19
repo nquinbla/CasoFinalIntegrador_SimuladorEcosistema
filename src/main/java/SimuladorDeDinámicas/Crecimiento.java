@@ -21,7 +21,7 @@ public class Crecimiento {
                 animal.setSalud(animal.getSalud() + 5);
 
                 if (animal.isEstadoReproductivo()) {
-                    Animal nuevoAnimal = new Animal(animal.getX(), animal.getY(), 0, 100, true);
+                    Animal nuevoAnimal = new Animal(animal.getX(), animal.getY(), 0, 100, true, animal.getNombre(), animal.getEspecie(), animal.getSexo());
                     nuevosAnimales.add(nuevoAnimal);
                 }
             }
@@ -41,7 +41,7 @@ public class Crecimiento {
                 planta.setSalud(planta.getSalud() + 3);
 
                 if (planta.isEstadoReproductivo()) {
-                    Planta nuevaPlanta = new Planta(planta.getX(), planta.getY(), 0, 100, true);
+                    Planta nuevaPlanta = new Planta(planta.getX(), planta.getY(), 0, 100, true, planta.getNombre(), planta.getEspecie(), planta.getCantidadAgua(), planta.getCantidadLuz(), planta.getCantidadNutrientes());
                     nuevasPlantas.add(nuevaPlanta);
                 }
             }
