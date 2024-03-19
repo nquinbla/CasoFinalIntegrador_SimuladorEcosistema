@@ -4,7 +4,7 @@ Caso Final Integrador 3 de Nerea Quintanilla Blanco, desarrollo de un simulador 
 LINK: https://github.com/nquinbla/CasoFinalIntegrador_EcosistemaInteligente.git
 
 ## DESCRIPCIÓN
-El programa consta
+El programa consta de dos partes, al iniciarlo te pregunta si eres Invitado o Investigador. Si eres Invitado, no tendrás que meter contraseña y podrás visualizar el simulador. Sin embargo, si escoges Investigador podrás acceder a más opciones a parte del simulador, como el Análisis Avanzado
 
 
 ## MÓDULOS DEL SISTEMA
