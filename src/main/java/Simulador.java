@@ -9,8 +9,6 @@ import java.util.Random;
 
 public class Simulador {
 
-
-
     public static void main(String[] args) {
         System.out.println("----- GESTOR DE SIMULACIONES -----");
         System.out.println("Bienvenido al gestor de simulaciones, por favor, seleccione una opción:");
