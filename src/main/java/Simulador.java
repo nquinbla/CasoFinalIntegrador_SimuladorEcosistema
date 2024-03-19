@@ -70,7 +70,8 @@ public class Simulador {
                     // Imprimir la lista de organismos para ver su estado después de cada día
                     for (Organismo organismo : poblacion) {
                         System.out.println(organismo);
-                    } }
+                    }
+                } break;
 
             case 2: // investigador
                 System.out.println("----- INVESTIGADOR -----");
