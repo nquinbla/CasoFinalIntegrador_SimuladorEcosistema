@@ -34,5 +34,6 @@ public class Animal extends Organismo {
             System.out.println("El animal se ha movido a (" + this.posX + ", " + this.posY + ")");
         }
     }
+
 }
 

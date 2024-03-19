@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="182db69b-6fdc-4951-b319-29bd34b03cd7" name="Changes" comment="ajustes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Simulador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Simulador.java" afterDir="false" />
-    </list>
+    <list default="true" id="182db69b-6fdc-4951-b319-29bd34b03cd7" name="Changes" comment="arreglso finales" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,79 +79,7 @@
       <workItem from="1710774935067" duration="3206000" />
       <workItem from="1710783525369" duration="8276000" />
       <workItem from="1710848075945" duration="496000" />
-      <workItem from="1710855927390" duration="14949000" />
-    </task>
-    <task id="LOCAL-00028" summary="arreglos">
-      <option name="closed" value="true" />
-      <created>1710786012769</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1710786012769</updated>
-    </task>
-    <task id="LOCAL-00029" summary="arreglos">
-      <option name="closed" value="true" />
-      <created>1710786041953</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1710786041953</updated>
-    </task>
-    <task id="LOCAL-00030" summary="interfaz de usuarios">
-      <option name="closed" value="true" />
-      <created>1710786363838</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1710786363838</updated>
-    </task>
-    <task id="LOCAL-00031" summary="interfaz de usuarios">
-      <option name="closed" value="true" />
-      <created>1710786445386</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1710786445386</updated>
-    </task>
-    <task id="LOCAL-00032" summary="interfaz de usuarios">
-      <option name="closed" value="true" />
-      <created>1710786506841</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1710786506841</updated>
-    </task>
-    <task id="LOCAL-00033" summary="interfaz de usuarios">
-      <option name="closed" value="true" />
-      <created>1710786583732</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1710786583732</updated>
-    </task>
-    <task id="LOCAL-00034" summary="visualizacion de datos">
-      <option name="closed" value="true" />
-      <created>1710787133428</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1710787133428</updated>
-    </task>
-    <task id="LOCAL-00035" summary="arreglos">
-      <option name="closed" value="true" />
-      <created>1710789407964</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1710789407964</updated>
-    </task>
-    <task id="LOCAL-00036" summary="prueba main 1">
-      <option name="closed" value="true" />
-      <created>1710791965734</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1710791965734</updated>
+      <workItem from="1710855927390" duration="16398000" />
     </task>
     <task id="LOCAL-00037" summary="prueba main 1">
       <option name="closed" value="true" />
@@ -476,7 +401,79 @@
       <option name="project" value="LOCAL" />
       <updated>1710877405797</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="ajustes">
+      <option name="closed" value="true" />
+      <created>1710878037030</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1710878037030</updated>
+    </task>
+    <task id="LOCAL-00078" summary="ajustes organismo">
+      <option name="closed" value="true" />
+      <created>1710878463714</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1710878463714</updated>
+    </task>
+    <task id="LOCAL-00079" summary="ajustes organismo">
+      <option name="closed" value="true" />
+      <created>1710878481613</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1710878481613</updated>
+    </task>
+    <task id="LOCAL-00080" summary="ajustes organismo">
+      <option name="closed" value="true" />
+      <created>1710878661919</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1710878661919</updated>
+    </task>
+    <task id="LOCAL-00081" summary="ajustes organismo">
+      <option name="closed" value="true" />
+      <created>1710878749988</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1710878749988</updated>
+    </task>
+    <task id="LOCAL-00082" summary="ajustes organismo">
+      <option name="closed" value="true" />
+      <created>1710878847422</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1710878847422</updated>
+    </task>
+    <task id="LOCAL-00083" summary="ajustes organismo">
+      <option name="closed" value="true" />
+      <created>1710878875224</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1710878875224</updated>
+    </task>
+    <task id="LOCAL-00084" summary="ajustes simulador de dinamicas">
+      <option name="closed" value="true" />
+      <created>1710879080793</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1710879080793</updated>
+    </task>
+    <task id="LOCAL-00085" summary="arreglso finales">
+      <option name="closed" value="true" />
+      <created>1710879278683</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1710879278683</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -515,6 +512,9 @@
     <MESSAGE value="main" />
     <MESSAGE value="MAIN invitado" />
     <MESSAGE value="ajustes" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajustes" />
+    <MESSAGE value="ajustes organismo" />
+    <MESSAGE value="ajustes simulador de dinamicas" />
+    <MESSAGE value="arreglso finales" />
+    <option name="LAST_COMMIT_MESSAGE" value="arreglso finales" />
   </component>
 </project>

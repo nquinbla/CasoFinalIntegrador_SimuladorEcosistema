@@ -2,13 +2,11 @@ import ModeladoDeEntidades.*;
 import GestiónUsuariosYSimulaciones.*;
 import SimuladorDeDinámicas.*;
 
-import java.util.Arrays;
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Random;
 
 public class Simulador {
-
     public static void main(String[] args) {
         System.out.println("----- GESTOR DE SIMULACIONES -----");
         System.out.println("Bienvenido al gestor de simulaciones, por favor, seleccione una opción:");
@@ -36,11 +34,14 @@ public class Simulador {
 
                 // Crear una población inicial
                 ArrayList<Organismo> poblacion = new ArrayList<>();
-                poblacion.addAll(Animal.todosLosAnimales);
-                poblacion.addAll(Planta.todasLasPlantas);
+                Animal animal = new Animal(0, 0, 0, 100, false, "Animal", false, false, true);
+                Planta planta = new Planta(0, 0, 0, 100, false, "Planta", false, false, true);
+                poblacion.add(animal);
+                poblacion.add(planta);
 
                 // Crear una instancia de la clase Crecimiento
-                Crecimiento crecimiento = new Crecimiento(poblacion);
+                Especie especie = new Especie("Especie", 1, 1);
+                Crecimiento crecimiento = new Crecimiento(especie, poblacion.size());
 
                 // Crear una lista de eventos
                 ArrayList<Eventos> eventos = new ArrayList<>();
@@ -65,8 +66,8 @@ public class Simulador {
                 for (int dia = 1; dia <= numDias; dia++) {
                     System.out.println("----- DÍA " + dia + " -----");
 
-                    crecimiento.crecimientoPoblacionAnimal();
-                    crecimiento.crecimientoPoblacionPlanta();
+                    crecimiento.crecer();
+                    crecimiento.reproducirse();
 
                     Eventos eventoAleatorio = eventos.get(new Random().nextInt(eventos.size()));
                     eventoAleatorio.aplicarEvento(poblacion);
