@@ -45,20 +45,4 @@ public abstract class Planta extends Organismo {
         return "Planta{" + "cantidadDeAgua=" + cantidadDeAgua + ", cantidadDeLuz=" + cantidadDeLuz + ", cantidadDeNutrientes=" + cantidadDeNutrientes + '}';
     }
 
-    // Métodos abstractos
-    @Override
-    public void moverse() {
-        // Implement the method for the Planta class
-    }
-
-    @Override
-    public void comer() {
-        // Implement the method for the Planta class
-    }
-
-    @Override
-    public Organismo reproducirse(Organismo pareja) {
-        // Implement the method for the Planta class
-        return pareja;
-    }
 }

@@ -21,30 +21,39 @@ public abstract  class Organismo {
     public int getX() {
         return x;
     }
+
     public void setX(int x) {
         this.x = x;
     }
+
     public int getY() {
         return y;
     }
+
     public void setY(int y) {
         this.y = y;
     }
+
     public int getEdad() {
         return edad;
     }
+
     public void setEdad(int edad) {
         this.edad = edad;
     }
+
     public int getSalud() {
         return salud;
     }
+
     public void setSalud(int salud) {
         this.salud = salud;
     }
+
     public boolean isEstadoReproductivo() {
         return EstadoReproductivo;
     }
+
     public void setEstadoReproductivo(boolean EstadoReproductivo) {
         this.EstadoReproductivo = EstadoReproductivo;
     }
@@ -54,13 +63,4 @@ public abstract  class Organismo {
     public String toString() {
         return "Organismo{" + "x=" + x + ", y=" + y + ", edad=" + edad + ", salud=" + salud + ", EstadoReproductivo=" + EstadoReproductivo + '}';
     }
-
-    // Métodos abstractos
-    public abstract void moverse();
-    public abstract void comer();
-    public abstract Organismo reproducirse(Organismo pareja);
-
-    // Métodos abstractos para interacciones naturales
-    public abstract void predation();
-    public abstract void competeForResources();
 }

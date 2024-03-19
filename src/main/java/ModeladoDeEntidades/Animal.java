@@ -35,29 +35,4 @@ public class Animal extends Organismo {
         return "Animal{" + "depredador=" + depredador + ", presa=" + presa + '}';
     }
 
-    // Métodos abstractos
-    @Override
-    public void moverse() {
-
-    }
-
-    @Override
-    public void comer() {
-
-    }
-
-    @Override
-    public Organismo reproducirse(Organismo pareja) {
-        return pareja;
-    }
-
-    @Override
-    public void predation() {
-
-    }
-
-    @Override
-    public void competeForResources() {
-
-    }
 }
