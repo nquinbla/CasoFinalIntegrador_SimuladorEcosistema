@@ -8,10 +8,15 @@ public class E_Enfermedad extends Eventos {
     private int probabilidadEnfermedad;
     private int probabilidadMuerte;
 
+    public static ArrayList<E_Enfermedad> todasLasEnfermedades = new ArrayList<E_Enfermedad>();
+
+
+
     // Constructor de la clase E_Enfermedad
     public E_Enfermedad(int probabilidadEnfermedad, int probabilidadMuerte) {
         this.probabilidadEnfermedad = probabilidadEnfermedad;
         this.probabilidadMuerte = probabilidadMuerte;
+        todasLasEnfermedades.add(this); // Agregar esta instancia a la lista
     }
 
     // Método aplicarEvento

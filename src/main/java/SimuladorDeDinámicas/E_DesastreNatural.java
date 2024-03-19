@@ -7,9 +7,14 @@ public class E_DesastreNatural extends Eventos{
 private int probabilidadDesastre;
     private int probabilidadMuerte;
 
+    public static ArrayList<E_DesastreNatural> todosLosDesastresNaturales = new ArrayList<E_DesastreNatural>();
+
+
     public E_DesastreNatural(int probabilidadDesastre, int probabilidadMuerte) {
         this.probabilidadDesastre = probabilidadDesastre;
         this.probabilidadMuerte = probabilidadMuerte;
+        todosLosDesastresNaturales.add(this); // Agregar esta instancia a la lista
+
     }
 
     @Override

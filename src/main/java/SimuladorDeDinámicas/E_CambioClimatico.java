@@ -7,9 +7,14 @@ public class E_CambioClimatico extends Eventos {
     private int probabilidadCambioClimatico;
     private int probabilidadMuerte;
 
+    public static ArrayList<E_CambioClimatico> todosLosCambiosClimaticos = new ArrayList<>();
+
+
     public E_CambioClimatico(int probabilidadCambioClimatico, int probabilidadMuerte) {
         this.probabilidadCambioClimatico = probabilidadCambioClimatico;
         this.probabilidadMuerte = probabilidadMuerte;
+        todosLosCambiosClimaticos.add(this); // Agregar esta instancia a la lista
+
     }
 
     @Override

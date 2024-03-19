@@ -32,7 +32,6 @@ public class Simulador {
                 System.out.println("----- INVITADO -----");
                 System.out.println("Bienvenido al gestor de simulaciones como invitado.");
 
-
                 // Preguntar al usuario cuántos días quiere simular
                 System.out.println("¿Cuántos días te gustaría simular?");
                 int numDias = scanner.nextInt();
@@ -43,14 +42,10 @@ public class Simulador {
 
                 Crecimiento crecimiento = new Crecimiento(poblacion);
 
-                E_CambioClimatico cambioClimatico = new E_CambioClimatico(10, 5);
-                E_DesastreNatural desastreNatural = new E_DesastreNatural(10, 5);
-                E_Enfermedad enfermedad = new E_Enfermedad(10, 5);
-
                 ArrayList<Eventos> eventos = new ArrayList<>();
-                eventos.add(cambioClimatico);
-                eventos.add(desastreNatural);
-                eventos.add(enfermedad);
+                ArrayList<E_CambioClimatico> todosLosCambiosClimaticos = E_CambioClimatico.todosLosCambiosClimaticos;
+                ArrayList<E_DesastreNatural> todosLosDesastresNaturales = E_DesastreNatural.todosLosDesastresNaturales;
+                ArrayList<E_Enfermedad> todasLasEnfermedades = E_Enfermedad.todasLasEnfermedades;
 
                 for (int dia = 1; dia <= numDias; dia++) {
                     System.out.println("----- DÍA " + dia + " -----");
