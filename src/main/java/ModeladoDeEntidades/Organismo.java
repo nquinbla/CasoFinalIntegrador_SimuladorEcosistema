@@ -26,32 +26,77 @@ public abstract  class Organismo {
     }
 
     // Getters y setters de la clase Organismo
-    public int getPosX() {return posX;}
-    public void setPosX(int posX) {this.posX = posX;}
+    public int getPosX() {
+        return posX;
+    }
 
-    public int getPosY() {return posY;}
-    public void setPosY(int posY) {this.posY = posY;}
+    public void setPosX(int posX) {
+        this.posX = posX;
+    }
 
-    public int getEdad() {return edad;}
-    public void setEdad(int edad) {this.edad = edad;}
+    public int getPosY() {
+        return posY;
+    }
 
-    public int getSalud() {return salud;}
-    public void setSalud(int salud) {this.salud = salud;}
+    public void setPosY(int posY) {
+        this.posY = posY;
+    }
 
-    public boolean isEstadoReproductivo() {return EstadoReproductivo;}
-    public void setEstadoReproductivo(boolean EstadoReproductivo) {this.EstadoReproductivo = EstadoReproductivo;}
+    public int getEdad() {
+        return edad;
+    }
 
-    public String getNombreEspecie() {return nombreEspecie;}
-    public void setNombreEspecie(String nombreEspecie) {this.nombreEspecie = nombreEspecie;}
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
 
-    public boolean isEsDepredador() {return esDepredador;}
-    public void setEsDepredador(boolean esDepredador) {this.esDepredador = esDepredador;}
+    public int getSalud() {
+        return salud;
+    }
 
-    public boolean isEsPresa() {return esPresa;}
-    public void setEsPresa(boolean esPresa) {this.esPresa = esPresa;}
+    public void setSalud(int salud) {
+        this.salud = salud;
+    }
 
-    public boolean isEstaVivo() {return estaVivo;}
-    public void setEstaVivo(boolean estaVivo) {this.estaVivo = estaVivo;}
+    public boolean isEstadoReproductivo() {
+        return EstadoReproductivo;
+    }
+
+    public void setEstadoReproductivo(boolean EstadoReproductivo) {
+        this.EstadoReproductivo = EstadoReproductivo;
+    }
+
+    public String getNombreEspecie() {
+        return nombreEspecie;
+    }
+
+    public void setNombreEspecie(String nombreEspecie) {
+        this.nombreEspecie = nombreEspecie;
+    }
+
+    public boolean isEsDepredador() {
+        return esDepredador;
+    }
+
+    public void setEsDepredador(boolean esDepredador) {
+        this.esDepredador = esDepredador;
+    }
+
+    public boolean isEsPresa() {
+        return esPresa;
+    }
+
+    public void setEsPresa(boolean esPresa) {
+        this.esPresa = esPresa;
+    }
+
+    public boolean isEstaVivo() {
+        return estaVivo;
+    }
+
+    public void setEstaVivo(boolean estaVivo) {
+        this.estaVivo = estaVivo;
+    }
 
     // Métodos de la clase Organismo
     public void envejecer() {
@@ -70,11 +115,4 @@ public abstract  class Organismo {
         // Método para que los organismos interactúen con el ambiente
     }
 
-
-
-    // Métodos Override
-    @Override
-    public String toString() {
-        return "Organismo{" + "x=" + x + ", y=" + y + ", edad=" + edad + ", salud=" + salud + ", EstadoReproductivo=" + EstadoReproductivo + '}';
-    }
 }
