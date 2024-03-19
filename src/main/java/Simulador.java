@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 public class Simulador {
 
+    // Primero, necesitas crear instancias de las clases que necesitas para tu simulador, como los animales, plantas y ambientes
     // Crear objetos de las clases Animal
     Animal newAnimal = new Animal(2, 3, 24, 100, true, "León", "Panthera leo", "Macho");
     Animal newAnimal2 = new Animal(65, 3, 22, 100, true, "Leona", "Panthera leo", "Hembra");
@@ -41,8 +42,7 @@ public class Simulador {
     Ambiente ambiente6 = new Ambiente("Templado", "Montaña", 1000);
 
 
-
-   public static void main(String[] args) {
+    public static void main(String[] args) {
         System.out.println("----- GESTOR DE SIMULACIONES -----");
         System.out.println("Bienvenido al gestor de simulaciones, por favor, seleccione una opción:");
         System.out.println("1. Invitado");
@@ -62,6 +62,8 @@ public class Simulador {
             case 1: // invitado
                 System.out.println("----- INVITADO -----");
                 System.out.println("Bienvenido al gestor de simulaciones como invitado.");
+
+
                 break;
 
             case 2: // investigador
@@ -83,7 +85,8 @@ public class Simulador {
                     // interfaz.mostrarInterfaz(); // Este método no existe en tu clase Interfaz
                 } else {
                     System.out.println("Inicio de sesión fallido. Usuario o contraseña incorrectos.");
-                } break;
+                }
+                break;
 
             case 3: // SALIR
                 System.out.println("Saliendo del gestor de simulaciones...");
