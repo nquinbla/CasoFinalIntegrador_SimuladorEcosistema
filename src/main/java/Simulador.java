@@ -2,7 +2,10 @@ import ModeladoDeEntidades.*;
 import GestiónUsuariosYSimulaciones.*;
 import SimuladorDeDinámicas.*;
 
+import java.util.Arrays;
 import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Random;
 
 public class Simulador {
 
@@ -64,7 +67,46 @@ public class Simulador {
                 System.out.println("Bienvenido al gestor de simulaciones como invitado.");
 
 
-                break;
+                // Preguntar al usuario cuántos días quiere simular
+                System.out.println("¿Cuántos días te gustaría simular?");
+                int numDias = scanner.nextInt();
+
+
+                // Crear una lista de organismos que incluye los animales y las plantas
+                ArrayList<Organismo> poblacion = new ArrayList<>();
+                poblacion.addAll(Arrays.asList(simulador.newAnimal, simulador.newAnimal2, simulador.newAnimal3, simulador.newAnimal4, simulador.newAnimal5, simulador.newAnimal6, simulador.newAnimal7, simulador.newAnimal8, simulador.newAnimal9, simulador.newAnimal10));
+                poblacion.addAll(Arrays.asList(simulador.newPlanta, simulador.newPlanta2, simulador.newPlanta3, simulador.newPlanta4, simulador.newPlanta5, simulador.newPlanta6, simulador.newPlanta7, simulador.newPlanta8, simulador.newPlanta9, simulador.newPlanta10));
+
+                // Crear una instancia de la clase Crecimiento y pasarle la lista de organismos
+                Crecimiento crecimiento = new Crecimiento(poblacion);
+
+                // Crear instancias de las clases de eventos y pasarles la lista de organismos
+                E_CambioClimatico cambioClimatico = new E_CambioClimatico(10, 5);
+                E_DesastreNatural desastreNatural = new E_DesastreNatural(10, 5);
+                E_Enfermedad enfermedad = new E_Enfermedad(10, 5);
+
+                // Crear una lista de eventos
+                ArrayList<Eventos> eventos = new ArrayList<>();
+                eventos.add(cambioClimatico);
+                eventos.add(desastreNatural);
+                eventos.add(enfermedad);
+
+                // Simular un número determinado de días
+                for (int dia = 1; dia <= numDias; dia++) {
+                    System.out.println("----- DÍA " + dia + " -----");
+
+                    // Simular el crecimiento de los organismos
+                    crecimiento.crecimientoPoblacionAnimal();
+                    crecimiento.crecimientoPoblacionPlanta();
+
+                    // Seleccionar un evento aleatorio y aplicarlo
+                    Eventos eventoAleatorio = eventos.get(new Random().nextInt(eventos.size()));
+                    eventoAleatorio.aplicarEvento(poblacion);
+
+                    // Imprimir la lista de organismos para ver su estado después de cada día
+                    for (Organismo organismo : poblacion) {
+                        System.out.println(organismo);
+                    } }
 
             case 2: // investigador
                 System.out.println("----- INVESTIGADOR -----");
