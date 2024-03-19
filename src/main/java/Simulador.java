@@ -54,10 +54,29 @@ public class Simulador {
                         Planta nuevaPlanta = new Planta ( nombre, tipo, altura, salud, estadoReproduccion );
                         System.out.println ( "¡Planta creada exitosamente!" );
                 }                        break;
-                    case 2:
-                        // Lógica para crear un nuevo animal
-                        crearNuevoAnimal ( scanner );
-                        break;
+                    case 2: // Lógica para crear un nuevo animal
+                        System.out.println ( "Ingrese el nombre del animal:" );
+                        String nombre = scanner.next ();
+
+                        System.out.println ( "Ingrese la especie del animal:" );
+                        String especie = scanner.next ();
+
+                        System.out.println ( "Ingrese la edad del animal:" );
+                        int edad = scanner.nextInt ();
+
+                        // Aquí puedes agregar más atributos según tu clase Animal
+                        System.out.println ( "Ingrese el género del animal:" );
+                        String genero = scanner.next ();
+
+                        System.out.println ( "Ingrese el color del animal:" );
+                        String color = scanner.next ();
+
+                        // Crear una nueva instancia de Animal con los datos proporcionados
+                        Animal nuevoAnimal = new Animal ( nombre, especie, edad, genero, color );
+
+                        // Aquí puedes hacer algo con el nuevo animal, como agregarlo a una lista de animales en tu zoológico, etc.
+                        System.out.println ( "¡Animal creado exitosamente!" );
+        }
                     case 3:
                         System.out.println("Volviendo al menú principal...");
                         break;
