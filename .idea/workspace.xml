@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="182db69b-6fdc-4951-b319-29bd34b03cd7" name="Changes" comment="ajustes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Simulador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Simulador.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,15 +81,7 @@
       <workItem from="1710774935067" duration="3206000" />
       <workItem from="1710783525369" duration="8276000" />
       <workItem from="1710848075945" duration="496000" />
-      <workItem from="1710855927390" duration="10128000" />
-    </task>
-    <task id="LOCAL-00016" summary="arreglos">
-      <option name="closed" value="true" />
-      <created>1710775877041</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1710775877041</updated>
+      <workItem from="1710855927390" duration="10471000" />
     </task>
     <task id="LOCAL-00017" summary="arreglos">
       <option name="closed" value="true" />
@@ -476,7 +467,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710872132421</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="ajustes">
+      <option name="closed" value="true" />
+      <created>1710873234366</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1710873234366</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
