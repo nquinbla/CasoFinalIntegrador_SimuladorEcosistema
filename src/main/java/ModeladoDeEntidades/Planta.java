@@ -1,21 +1,31 @@
 package ModeladoDeEntidades;
 
 import java.util.ArrayList;
+import java.util.List;
 
 // Clase Planta
 public class Planta extends Organismo {
+    protected String tipo;
+    protected String especie;
 
-    public Planta(int x, int y, int edad, int salud, boolean EstadoReproductivo, String nombreEspecie, boolean esDepredador, boolean esPresa, boolean estaVivo) {
-        super(x, y, edad, salud, EstadoReproductivo, nombreEspecie, esDepredador, esPresa, estaVivo);
+    private static List<Planta> plantasList = new ArrayList<>();
+
+    // Constructor de la clase Planta
+    public Planta(String nombre, Posicion posicion, int salud, int edad, boolean estadoReproductivo, String tipo, String especie) {
+        super(nombre, posicion, salud, edad, estadoReproductivo);
+        this.tipo = tipo;
+        this.especie = especie;
+        plantasList.add(this);
     }
+
+    // Getters y setters de la clase Planta
+    public String getTipo() {return tipo;}
+    public void setTipo(String tipo) {this.tipo = tipo;}
+    public String getEspecie() {return especie;}
+    public void setEspecie(String especie) {this.especie = especie;}
+    public static List<Planta> getPlantasList() {return plantasList;}
 
     @Override
-public void interactuar(Ambiente ambiente) {
-        this.salud += ambiente.obtenerRecursos(7); //
-        if (this.EstadoReproductivo && this.salud >= 75) {
-            Planta nuevaPlanta = new Planta(this.posX, this.posY, 0, 100, false, "Planta", false, false, true);
-            ambiente.agregarOrganismo(nuevaPlanta);
-            System.out.println("¡Una nueva planta ha brotado en (" + this.posX + ", " + this.posY + ")!");
-        }
+    public String toString() {
+        return "Planta: " + this.getNombre();
     }
-}
