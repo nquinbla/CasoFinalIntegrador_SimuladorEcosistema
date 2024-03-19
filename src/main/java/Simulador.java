@@ -5,6 +5,7 @@ import ModeladoDeEntidades.*;
 import GestiónUsuariosYSimulaciones.*;
 import SimuladorDeDinámicas.*;
 
+import java.util.List;
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Random;
@@ -72,9 +73,6 @@ public class Simulador {
         // Leer la opción seleccionada por el usuario
         int opcion = scanner.nextInt();
 
-        // Crear un objeto de la clase Simulador
-        Simulador simulador = new Simulador();
-
         // Según la opción seleccionada por el usuario, ejecutar el método correspondiente
         switch (opcion) {
             case 1: // invitado
@@ -90,7 +88,7 @@ public class Simulador {
                 // Según la opción seleccionada por el usuario, ejecutar el método correspondiente
                 switch (opcionInvitado) {
                     case 1:
-                        simulador.verOrganismos();
+                        Simulación.verOrganismos();
                         break;
                     case 2: // SALIR
                         System.out.println("Saliendo del gestor de simulaciones...");
@@ -98,8 +96,8 @@ public class Simulador {
                 }
 
             case 2: // investigador
-                System.out.println("----- INVESTIGADOR -----");
-                System.out.println("Bienvenido al gestor de simulaciones como investigador.");
+                System.out.println("----- INICIO SESIÓN -----");
+                System.out.println("Bienvenido al gestor de simulaciones, por favor, inicie sesión como investigador");
 
                 Interfaz interfaz = new Interfaz();
 
@@ -116,26 +114,44 @@ public class Simulador {
 
                     scanner.nextLine(); // consume the newline
 
+                    System.out.println("----- INVESTIGADOR -----");
+                    System.out.println("Bienvenido al gestor de simulaciones como investigador.");
                     System.out.println("Por favor, seleccione una opción:");
-                    System.out.println("1. Ejecutar simulación");
-                    System.out.println("2. Visualizar resultados");
-                    System.out.println("3. Integrar nuevas funciones");
+                    System.out.println("1. Población");
+                    System.out.println("2. Análisis Avanzado");
+                    System.out.println("3. Simulador");
                     System.out.println("4. Salir");
 
                     int opcionInvestigador = scanner.nextInt();
                     scanner.nextLine(); // consume the newline
 
                     switch (opcionInvestigador) {
-                        case 1:
-                            System.out.println("Ejecutando simulación...");
+                        case 1: // POBLACIÓN
+                            List<Animal> animales = Animal.getAnimalesList();
+                            List<Planta> plantas = Planta.getPlantasList();
+
+                            System.out.println("Animales:");
+                            for (Animal animal : animales) {
+                                System.out.println(animal);
+                            }
+
+                            System.out.println("Plantas:");
+                            for (Planta planta : plantas) {
+                                System.out.println(planta);
+                            }
+
                             break;
 
-                        case 2:
-                            System.out.println("Visualizando resultados...");
+
+                        case 2: // ANÁLISIS AVANZADO
+                            realizarAnalisis();
+
                             break;
 
-                        case 3:
-                            System.out.println("Integrando nuevas funciones...");
+
+                        case 3: // SIMULADOR
+                            System.out.println("Comenzando simulación...");
+                            Simulación.iniciarSimulacion();
                             break;
 
                         case 4:
@@ -154,12 +170,44 @@ public class Simulador {
             case 3: // SALIR
                 System.out.println("Saliendo del gestor de simulaciones...");
                 break;
-
-            default:
-                System.out.println("Opción no válida.");
-        } case 3: // SALIR
+        }
         System.out.println("Saliendo del gestor de simulaciones...");
-        break;
+
     }
 }
+
+//
+private static void realizarAnalisis() {
+    List<Animal> animales = Animal.getAnimalesList();
+    Ambiente ambiente = new Ambiente("Arido", "Sabana", 1000);
+
+    // Simulate environmental impact events
+    SimuladorDeDinámicas.E_CambioClimatico cambioClimatico = new SimuladorDeDinámicas.E_CambioClimatico();
+    SimuladorDeDinámicas.E_DesastreNatural desastreNatural = new SimuladorDeDinámicas.E_DesastreNatural();
+    SimuladorDeDinámicas.E_Enfermedad enfermedad = new SimuladorDeDinámicas.E_Enfermedad();
+
+
+    animales.forEach(animal -> {
+        cambioClimatico.aplicar(animal);
+        desastreNatural.aplicar(animal);
+        enfermedad.aplicar(animal);
+    });
+
+    // Perform analysis using Problemas class
+    ResoluciónProblemas problemas = new ResoluciónProblemas();
+    problemas.buscarEquilibrios(animales, ambiente);
+    problemas.evaluarConservacion(animales, ambiente);
+
+    // Example of a predicate to simulate an environmental change. You can customize this.
+    problemas.simularImpactos(ambiente, amb -> amb.getRecursosDisponibles() < 800);
+
+    // Final data visualization
+    System.out.println("Análisis finalizado.");
+    System.out.println(VisualizacionDatos.visualizarDatos(animales));
 }
+
+public void main(String[] args) {
+    Simulador simulador = new Simulador();
+    Simulación.iniciar();
+}
+

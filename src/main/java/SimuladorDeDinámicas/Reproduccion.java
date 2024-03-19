@@ -37,7 +37,7 @@ public class Reproduccion {
                 Math.max(animal1.getEdad(), animal2.getEdad()),
                 false,
                 animal1.getEspecie(),
-                alimentacion
+                (int) alimentacion
         );
 
         return nuevoAnimal;

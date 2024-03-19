@@ -10,14 +10,26 @@ import java.util.List;
 
 // Clase que representa la simulación de un ecosistema
 public class Simulación {
-    private Random random = new Random();
-    private EventoAleatorio[] eventos = {new E_DesastreNatural(), new E_CambioClimatico()};
+    private static Random random = new Random();
+    private static EventoAleatorio[] eventos = {new E_DesastreNatural(), new E_CambioClimatico()};
     private Crecimiento crecimiento = new Crecimiento();
     private Reproduccion reproduccion = new Reproduccion();
-    private List<Animal> animalesMovidos = new ArrayList<>();
+    private static List<Animal> animalesMovidos = new ArrayList<>();
+
+    public static void verOrganismos() {
+        System.out.println("----- ANIMALES -----");
+        for (Animal animal : Animal.getAnimalesList()) {
+            System.out.println(animal.toString());
+        }
+
+        System.out.println("----- PLANTAS -----");
+        for (Planta planta : Planta.getPlantasList()) {
+            System.out.println(planta.toString());
+        }
+    }
 
     // Método que inicia la simulación
-    public void iniciarSimulacion() {
+    public static void iniciarSimulacion() {
         int dia = 1;
         while (true) {
             System.out.println("Día " + dia + " de la simulación:");
@@ -37,8 +49,13 @@ public class Simulación {
         }
     }
 
+    public static void iniciar() {
+        Simulación simulación = new Simulación();
+        simulación.iniciarSimulacion();
+    }
+
     // Método que desplaza a los animales de forma aleatoria
-    public void desplazarAnimales() {
+    public static void desplazarAnimales() {
         List<Animal> animales = Animal.getAnimalesList();
         if (animales != null) {
             for (Animal animal : animales) {
@@ -57,7 +74,7 @@ public class Simulación {
     }
 
     // Método que aplica eventos aleatorios a los animales
-    public void aplicarEventos() {
+    public static void aplicarEventos() {
         List<Animal> animales = Animal.getAnimalesList();
         if (animales != null) {
             for (Animal animal : animales) {
@@ -72,7 +89,7 @@ public class Simulación {
     }
 
     // Método que simula una pelea entre animales
-    public void pelear() {
+    public static void pelear() {
         List<Animal> animales = Animal.getAnimalesList();
         if (animales != null) {
             for (Animal animal1 : animales) {
@@ -94,7 +111,7 @@ public class Simulación {
     }
 
     // Método que muestra los resultados de la simulación
-    public void mostrarResultados() {
+    public static void mostrarResultados() {
         List<Animal> animales = Animal.getAnimalesList();
         if (animales != null) {
             for (Animal animal : animales) {

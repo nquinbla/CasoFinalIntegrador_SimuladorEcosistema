@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="182db69b-6fdc-4951-b319-29bd34b03cd7" name="Changes" comment="arreglos de simuacion">
+    <list default="true" id="182db69b-6fdc-4951-b319-29bd34b03cd7" name="Changes" comment="arreglos simulador">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ModeladoDeEntidades/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ModeladoDeEntidades/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Simulación.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Simulación.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Simulador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Simulador.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,15 +85,7 @@
       <workItem from="1710774935067" duration="3206000" />
       <workItem from="1710783525369" duration="8276000" />
       <workItem from="1710848075945" duration="496000" />
-      <workItem from="1710855927390" duration="23567000" />
-    </task>
-    <task id="LOCAL-00062" summary="ajustes">
-      <option name="closed" value="true" />
-      <created>1710867999270</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1710867999270</updated>
+      <workItem from="1710855927390" duration="24854000" />
     </task>
     <task id="LOCAL-00063" summary="ajustes">
       <option name="closed" value="true" />
@@ -475,7 +471,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710886928233</updated>
     </task>
-    <option name="localTasksCounter" value="111" />
+    <task id="LOCAL-00111" summary="arreglos simulador">
+      <option name="closed" value="true" />
+      <created>1710887860745</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1710887860745</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -493,7 +497,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="visualizacion de datos" />
     <MESSAGE value="prueba main 1 (arreglos)" />
     <MESSAGE value="prueba main 1" />
     <MESSAGE value="crecimeinto" />
@@ -518,25 +521,21 @@
     <MESSAGE value="arreglos y crecimiento" />
     <MESSAGE value="arreglos de analisis avanzado" />
     <MESSAGE value="arreglos de simuacion" />
-    <option name="LAST_COMMIT_MESSAGE" value="arreglos de simuacion" />
+    <MESSAGE value="arreglos simulador" />
+    <option name="LAST_COMMIT_MESSAGE" value="arreglos simulador" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Simulador.java</url>
-          <line>69</line>
+          <line>77</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Simulador.java</url>
-          <line>181</line>
+          <line>98</line>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Simulador.java</url>
-          <line>240</line>
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
