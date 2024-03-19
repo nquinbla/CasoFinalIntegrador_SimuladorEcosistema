@@ -4,36 +4,29 @@ import java.util.ArrayList;
 
 // Clase Animal
 public class Animal extends Organismo {
+    private String especie;
+    private String alimentacion;
 
-    public Animal(int x, int y, int edad, int salud, boolean EstadoReproductivo, String nombreEspecie, boolean esDepredador, boolean esPresa, boolean estaVivo) {
-        super(x, y, edad, salud, EstadoReproductivo, nombreEspecie, esDepredador, esPresa, estaVivo);
+    private static ArrayList<Animal> animalesList = new ArrayList<>();
+
+    // Constructor de la clase Animal
+    public Animal(String nombre, Posicion posicion, int salud, int edad, boolean estadoReproductivo, String especie, String alimentacion) {
+        super(nombre, posicion, salud, edad, estadoReproductivo);
+        this.especie = especie;
+        this.alimentacion = alimentacion;
+        animalesList.add(this);
     }
+
+    // Getters y setters de la clase Animal
+    public String getEspecie() {return especie;}
+    public void setEspecie(String especie) {this.especie = especie;}
+    public String getAlimentacion() {return alimentacion;}
+    public void setAlimentacion(String alimentacion) {this.alimentacion = alimentacion;}
+
+    public static ArrayList<Animal> getAnimalesList() {return animalesList;}
 
     @Override
-    public void interactuar(Ambiente ambiente) {
-
-        // Al econtrar comida, aumenta su salud
-        int recursosEncontrados = ambiente.buscarComida(this);
-        if (recursosEncontrados > 0) {
-            this.salud += recursosEncontrados;
-        }
-
-        // Movimiento aleatorio
-        moverseAleatoriamente(ambiente);
+    public String toString() {
+        return "Animal: " + this.getNombre();
     }
-
-    private void moverseAleatoriamente(Ambiente ambiente) {
-        // Método para simular el movimiento aleatorio de un animal en el ambiente
-        int newX = this.posX + (int) (Math.random() * 3) - 1; // Mover en el rango [-1, 1]
-        int newY = this.posY + (int) (Math.random() * 3) - 1; // Mover en el rango [-1, 1]
-
-        // Verificar si la nueva posición está dentro de los límites del ambiente
-        if (ambiente.validarPosicion(newX, newY)) {
-            this.posX = newX;
-            this.posY = newY;
-            System.out.println("El animal se ha movido a (" + this.posX + ", " + this.posY + ")");
-        }
-    }
-
 }
-
