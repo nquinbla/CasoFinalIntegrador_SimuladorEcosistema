@@ -27,6 +27,44 @@ public class Simulador {
             case 1: // invitado
                 System.out.println("----- INVITADO -----");
                 System.out.println("Bienvenido al gestor de simulaciones como invitado.");
+                System.out.println("1. Crear un organismo");
+                System.out.println("2. Simular dinámicas de poblaciones");
+                System.out.println("3. Volver al menú principal");
+
+
+                // Leer la opción seleccionada por el usuario
+                int opcionInvitado = scanner.nextInt();
+                scanner.nextLine(); // consume the newline
+
+                // Según la opción seleccionada por el usuario, ejecutar el método correspondiente
+                switch (opcionInvitado) {
+                    case 1:
+                        // Lógica para crear una nueva planta
+                        System.out.println ( "Ingrese el nombre de la planta:" );
+                        String nombre = scanner.next ();
+                        System.out.println ( "Ingrese el tipo de la planta:" );
+                        String tipo = scanner.next ();
+                        System.out.println ( "Ingrese la altura de la planta:" );
+                        double altura = scanner.nextDouble ();
+                        System.out.println ( "Ingrese el estado de salud de la planta (bueno, regular, malo):" );
+                        String salud = scanner.next ();
+                        System.out.println ( "Ingrese el estado de reproducción de la planta (true/false):" );
+                        boolean estadoReproduccion = scanner.nextBoolean ();
+
+                        // Crear una nueva instancia de Planta con los datos proporcionados
+                        Planta nuevaPlanta = new Planta ( nombre, tipo, altura, salud, estadoReproduccion );
+                        System.out.println ( "¡Planta creada exitosamente!" );
+                }                        break;
+                    case 2:
+                        // Lógica para crear un nuevo animal
+                        crearNuevoAnimal ( scanner );
+                        break;
+                    case 3:
+                        System.out.println("Volviendo al menú principal...");
+                        break;
+                    default:
+                        System.out.println("Opción no válida.");
+                }
 
                 // Preguntar al usuario cuántos días quiere simular
                 System.out.println("¿Cuántos días te gustaría simular?");
