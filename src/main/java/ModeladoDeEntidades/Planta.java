@@ -11,8 +11,8 @@ public class Planta extends Organismo {
     protected int cantidadNutrientes;
 
 
+    // Lista de todas las plantas
     public static ArrayList<Planta> todasLasPlantas = new ArrayList<>();
-
     static {
         todasLasPlantas.add(new Planta(2, 3, 24, 100, true, "Rosa", "Rosa", 100, 100, 100));
         todasLasPlantas.add(new Planta(2, 3, 24, 100, true, "Girasol", "Helianthus annuus", 100, 100, 100));

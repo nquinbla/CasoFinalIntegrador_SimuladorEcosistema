@@ -8,6 +8,7 @@ public class Ambiente {
     protected String terreno;
     protected int recursosDisponibles;
 
+    // Lista de todos los ambientes
     public static ArrayList<Ambiente> todosLosAmbientes = new ArrayList<>();
     static {
         todosLosAmbientes.add(new Ambiente("Tropical", "Selva", 1000));

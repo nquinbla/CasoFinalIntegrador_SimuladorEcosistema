@@ -8,10 +8,10 @@ public class Animal extends Organismo {
     protected String especie;
     protected String sexo;
 
+    // Lista de todos los animales
     public static ArrayList<Animal> todosLosAnimales = new ArrayList<>();
-
     static {
-todosLosAnimales.add(new Animal(2, 3, 24, 100, true, "León", "Panthera leo", "Macho"));
+        todosLosAnimales.add(new Animal(2, 3, 24, 100, true, "León", "Panthera leo", "Macho"));
         todosLosAnimales.add(new Animal(65, 3, 22, 100, true, "Leona", "Panthera leo", "Hembra"));
         todosLosAnimales.add(new Animal(2, 3, 65, 100, true, "Lobo", "Canis Lopus", "Macho"));
         todosLosAnimales.add(new Animal(2, 3, 21, 100, true, "Loba", "Canis Lopus", "Hembra"));
