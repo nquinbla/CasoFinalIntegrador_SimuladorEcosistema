@@ -13,6 +13,19 @@ public class Planta extends Organismo {
 
     public static ArrayList<Planta> todasLasPlantas = new ArrayList<>();
 
+    static {
+        todasLasPlantas.add(new Planta(2, 3, 24, 100, true, "Rosa", "Rosa", 100, 100, 100));
+        todasLasPlantas.add(new Planta(2, 3, 24, 100, true, "Girasol", "Helianthus annuus", 100, 100, 100));
+        todasLasPlantas.add(new Planta(2, 3, 24, 100, true, "Orquídea", "Orchidaceae", 100, 100, 100));
+        todasLasPlantas.add(new Planta(2, 3, 24, 100, true, "Margarita", "Bellis perennis", 100, 100, 100));
+        todasLasPlantas.add(new Planta(2, 3, 24, 100, true, "Tulipán", "Tulipa", 100, 100, 100));
+        todasLasPlantas.add(new Planta(2, 3, 24, 100, true, "Lirio", "Lilium", 100, 100, 100));
+        todasLasPlantas.add(new Planta(2, 3, 24, 100, true, "Marihuana", "Cannabis sativa", 100, 100, 100));
+        todasLasPlantas.add(new Planta(2, 3, 24, 100, true, "Coca", "Erythroxylum coca", 100, 100, 100));
+        todasLasPlantas.add(new Planta(2, 3, 24, 100, true, "Amapola", "Papaver somniferum", 100, 100, 100));
+        todasLasPlantas.add(new Planta(2, 3, 24, 100, true, "Cactus", "Cactaceae", 100, 100, 100));
+    }
+
     // Constructor de la clase Planta
     public Planta(int x, int y, int edad, int salud, boolean EstadoReproductivo, String nombre, String especie, int cantidadAgua, int cantidadLuz, int cantidadNutrientes) {
         super(x, y, edad, salud, EstadoReproductivo);

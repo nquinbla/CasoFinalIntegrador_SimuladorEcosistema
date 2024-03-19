@@ -9,39 +9,6 @@ import java.util.Random;
 
 public class Simulador {
 
-    // Primero, necesitas crear instancias de las clases que necesitas para tu simulador, como los animales, plantas y ambientes
-    // Crear objetos de las clases Animal
-    Animal newAnimal = new Animal(2, 3, 24, 100, true, "León", "Panthera leo", "Macho");
-    Animal newAnimal2 = new Animal(65, 3, 22, 100, true, "Leona", "Panthera leo", "Hembra");
-    Animal newAnimal3 = new Animal(2, 3, 65, 100, true, "Lobo", "Canis Lopus", "Macho");
-    Animal newAnimal4 = new Animal(2, 3, 21, 100, true, "Loba", "Canis Lopus", "Hembra");
-    Animal newAnimal5 = new Animal(2, 3, 24, 100, true, "Tigre", "Panthera tigris", "Macho");
-    Animal newAnimal6 = new Animal(2, 3, 22, 100, true, "Tigresa", "Panthera tigris", "Hembra");
-    Animal newAnimal7 = new Animal(2, 3, 24, 100, true, "Elefante", "Loxodonta africana", "Macho");
-    Animal newAnimal8 = new Animal(2, 3, 22, 100, true, "Elefanta", "Loxodonta africana", "Hembra");
-    Animal newAnimal9 = new Animal(2, 3, 24, 100, true, "Jirafa", "Giraffa camelopardalis", "Macho");
-    Animal newAnimal10 = new Animal(2, 3, 22, 100, true, "Jirafa", "Giraffa camelopardalis", "Hembra");
-
-
-    // Crear objetos de las clases Planta
-    Planta newPlanta = new Planta(2, 3, 24, 100, true, "Rosa", "Rosa", 100, 100, 100);
-    Planta newPlanta2 = new Planta(2, 3, 24, 100, true, "Girasol", "Helianthus annuus", 100, 100, 100);
-    Planta newPlanta3 = new Planta(2, 3, 24, 100, true, "Orquídea", "Orchidaceae", 100, 100, 100);
-    Planta newPlanta4 = new Planta(2, 3, 24, 100, true, "Margarita", "Bellis perennis", 100, 100, 100);
-    Planta newPlanta5 = new Planta(2, 3, 24, 100, true, "Tulipán", "Tulipa", 100, 100, 100);
-    Planta newPlanta6 = new Planta(2, 3, 24, 100, true, "Lirio", "Lilium", 100, 100, 100);
-    Planta newPlanta7 = new Planta(2, 3, 24, 100, true, "Marihuana", "Cannabis sativa", 100, 100, 100);
-    Planta newPlanta8 = new Planta(2, 3, 24, 100, true, "Coca", "Erythroxylum coca", 100, 100, 100);
-    Planta newPlanta9 = new Planta(2, 3, 24, 100, true, "Amapola", "Papaver somniferum", 100, 100, 100);
-    Planta newPlanta10 = new Planta(2, 3, 24, 100, true, "Cactus", "Cactaceae", 100, 100, 100);
-
-    // Crear ambientes
-    Ambiente ambiente = new Ambiente("Tropical", "Selva", 1000);
-    Ambiente ambiente2 = new Ambiente("Desértico", "Desierto", 1000);
-    Ambiente ambiente3 = new Ambiente("Polar", "Tundra", 1000);
-    Ambiente ambiente4 = new Ambiente("Templado", "Bosque", 1000);
-    Ambiente ambiente5 = new Ambiente("Subtropical", "Pradera", 1000);
-    Ambiente ambiente6 = new Ambiente("Templado", "Montaña", 1000);
 
 
     public static void main(String[] args) {
@@ -73,8 +40,6 @@ public class Simulador {
 
                 // Crear una lista de organismos que incluye los animales y las plantas
                 ArrayList<Organismo> poblacion = new ArrayList<>();
-                poblacion.addAll(Arrays.asList(simulador.newAnimal, simulador.newAnimal2, simulador.newAnimal3, simulador.newAnimal4, simulador.newAnimal5, simulador.newAnimal6, simulador.newAnimal7, simulador.newAnimal8, simulador.newAnimal9, simulador.newAnimal10));
-                poblacion.addAll(Arrays.asList(simulador.newPlanta, simulador.newPlanta2, simulador.newPlanta3, simulador.newPlanta4, simulador.newPlanta5, simulador.newPlanta6, simulador.newPlanta7, simulador.newPlanta8, simulador.newPlanta9, simulador.newPlanta10));
 
                 // Crear una instancia de la clase Crecimiento y pasarle la lista de organismos
                 Crecimiento crecimiento = new Crecimiento(poblacion);
