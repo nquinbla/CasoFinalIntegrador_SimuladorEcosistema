@@ -36,16 +36,33 @@ public class Simulador {
                 System.out.println("¿Cuántos días te gustaría simular?");
                 int numDias = scanner.nextInt();
 
+                // Crear una población inicial
                 ArrayList<Organismo> poblacion = new ArrayList<>();
                 poblacion.addAll(Animal.todosLosAnimales);
                 poblacion.addAll(Planta.todasLasPlantas);
 
+                // Crear una instancia de la clase Crecimiento
                 Crecimiento crecimiento = new Crecimiento(poblacion);
 
+                // Crear una lista de eventos
                 ArrayList<Eventos> eventos = new ArrayList<>();
-                ArrayList<E_CambioClimatico> todosLosCambiosClimaticos = E_CambioClimatico.todosLosCambiosClimaticos;
-                ArrayList<E_DesastreNatural> todosLosDesastresNaturales = E_DesastreNatural.todosLosDesastresNaturales;
-                ArrayList<E_Enfermedad> todasLasEnfermedades = E_Enfermedad.todasLasEnfermedades;
+                // Solicitar al usuario la probabilidad de cambio climático
+                System.out.println("Por favor, introduce la probabilidad de cambio climático:");
+                int probabilidadCambioClimatico = scanner.nextInt();
+
+                // Solicitar al usuario la probabilidad de muerte
+                System.out.println("Por favor, introduce la probabilidad de muerte:");
+                int probabilidadMuerte = scanner.nextInt();
+
+                // Crear instancias de los eventos
+                E_CambioClimatico cambioClimatico = new E_CambioClimatico(probabilidadCambioClimatico, probabilidadMuerte);
+                E_DesastreNatural desastreNatural = new E_DesastreNatural(probabilidadCambioClimatico, probabilidadMuerte); // Asumiendo que las mismas probabilidades se aplican para este evento
+                E_Enfermedad enfermedad = new E_Enfermedad(probabilidadCambioClimatico, probabilidadMuerte); // Asumiendo que las mismas probabilidades se aplican para este evento
+
+                // Añadir los eventos a la lista de eventos
+                eventos.add(cambioClimatico);
+                eventos.add(desastreNatural);
+                eventos.add(enfermedad);
 
                 for (int dia = 1; dia <= numDias; dia++) {
                     System.out.println("----- DÍA " + dia + " -----");
@@ -58,9 +75,7 @@ public class Simulador {
 
                     for (Organismo organismo : poblacion) {
                         System.out.println(organismo);
-                    }
-                }
-                break;
+                    } } break;
 
             case 2: // investigador
                 System.out.println("----- INVESTIGADOR -----");
