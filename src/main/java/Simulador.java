@@ -35,7 +35,6 @@ public class Simulador {
     Planta newPlanta9 = new Planta(2, 3, 24, 100, true, "Amapola", "Papaver somniferum", 100, 100, 100);
     Planta newPlanta10 = new Planta(2, 3, 24, 100, true, "Cactus", "Cactaceae", 100, 100, 100);
 
-
     // Crear ambientes
     Ambiente ambiente = new Ambiente("Tropical", "Selva", 1000);
     Ambiente ambiente2 = new Ambiente("Desértico", "Desierto", 1000);
