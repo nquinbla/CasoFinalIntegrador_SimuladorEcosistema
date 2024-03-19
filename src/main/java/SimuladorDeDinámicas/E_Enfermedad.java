@@ -15,6 +15,7 @@ public class E_Enfermedad extends Eventos {
     }
 
     // Método aplicarEvento
+    @Override
     public void aplicarEvento(ArrayList<Organismo> poblacion) {
         for (Organismo organismo : poblacion) {
             if (organismo instanceof Animal) {

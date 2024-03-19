@@ -12,6 +12,7 @@ private int probabilidadDesastre;
         this.probabilidadMuerte = probabilidadMuerte;
     }
 
+    @Override
     public void aplicarEvento(ArrayList<Organismo> poblacion) {
         for (Organismo organismo : poblacion) {
             if (organismo instanceof Animal) {

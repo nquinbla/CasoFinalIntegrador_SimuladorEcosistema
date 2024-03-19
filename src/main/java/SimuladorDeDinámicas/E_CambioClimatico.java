@@ -12,6 +12,7 @@ public class E_CambioClimatico extends Eventos {
         this.probabilidadMuerte = probabilidadMuerte;
     }
 
+    @Override
     public void aplicarEvento(ArrayList<Organismo> poblacion) {
         for (Organismo organismo : poblacion) {
             if (organismo instanceof Planta) {
