@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="182db69b-6fdc-4951-b319-29bd34b03cd7" name="Changes" comment="ajustes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Simulador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Simulador.java" afterDir="false" />
+    <list default="true" id="182db69b-6fdc-4951-b319-29bd34b03cd7" name="Changes" comment="MAIN invitado">
+      <change beforePath="$PROJECT_DIR$/src/main/java/ModeladoDeEntidades/Ambiente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ModeladoDeEntidades/Ambiente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ModeladoDeEntidades/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ModeladoDeEntidades/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ModeladoDeEntidades/Planta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ModeladoDeEntidades/Planta.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,23 +83,7 @@
       <workItem from="1710774935067" duration="3206000" />
       <workItem from="1710783525369" duration="8276000" />
       <workItem from="1710848075945" duration="496000" />
-      <workItem from="1710855927390" duration="12031000" />
-    </task>
-    <task id="LOCAL-00020" summary="arreglos">
-      <option name="closed" value="true" />
-      <created>1710777029799</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1710777029799</updated>
-    </task>
-    <task id="LOCAL-00021" summary="arreglos">
-      <option name="closed" value="true" />
-      <created>1710777068762</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1710777068762</updated>
+      <workItem from="1710855927390" duration="12800000" />
     </task>
     <task id="LOCAL-00022" summary="arreglos">
       <option name="closed" value="true" />
@@ -476,7 +461,23 @@
       <option name="project" value="LOCAL" />
       <updated>1710874353237</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="MAIN invitado">
+      <option name="closed" value="true" />
+      <created>1710875028688</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1710875028688</updated>
+    </task>
+    <task id="LOCAL-00070" summary="MAIN invitado">
+      <option name="closed" value="true" />
+      <created>1710875059465</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1710875059465</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -514,6 +515,7 @@
     <MESSAGE value="gestión de simulador" />
     <MESSAGE value="main" />
     <MESSAGE value="ajustes" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajustes" />
+    <MESSAGE value="MAIN invitado" />
+    <option name="LAST_COMMIT_MESSAGE" value="MAIN invitado" />
   </component>
 </project>

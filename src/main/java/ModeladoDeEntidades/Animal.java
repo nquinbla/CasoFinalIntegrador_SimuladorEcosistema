@@ -1,10 +1,15 @@
 package ModeladoDeEntidades;
 
+import java.util.ArrayList;
+
 // Clase Animal
 public class Animal extends Organismo {
     protected String nombre;
     protected String especie;
     protected String sexo;
+
+    public static ArrayList<Animal> todosLosAnimales = new ArrayList<>();
+
 
     // Constructor de la clase Animal
     public Animal(int x, int y, int edad, int salud, boolean EstadoReproductivo, String nombre, String especie, String sexo) {

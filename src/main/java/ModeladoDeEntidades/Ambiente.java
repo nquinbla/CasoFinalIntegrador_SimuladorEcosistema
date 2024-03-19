@@ -1,10 +1,14 @@
 package ModeladoDeEntidades;
 
+import java.util.ArrayList;
+
 // Clase Ambiente
 public class Ambiente {
     protected String clima;
     protected String terreno;
     protected int recursosDisponibles;
+
+    public static ArrayList<Ambiente> todosLosAmbientes = new ArrayList<>();
 
     // Constructor de la clase Ambiente
     public Ambiente(String clima, String terreno, int recursosDisponibles) {

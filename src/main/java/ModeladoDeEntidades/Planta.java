@@ -1,5 +1,7 @@
 package ModeladoDeEntidades;
 
+import java.util.ArrayList;
+
 // Clase Planta
 public class Planta extends Organismo {
     protected String nombre;
@@ -8,6 +10,8 @@ public class Planta extends Organismo {
     protected int cantidadLuz;
     protected int cantidadNutrientes;
 
+
+    public static ArrayList<Planta> todasLasPlantas = new ArrayList<>();
 
     // Constructor de la clase Planta
     public Planta(int x, int y, int edad, int salud, boolean EstadoReproductivo, String nombre, String especie, int cantidadAgua, int cantidadLuz, int cantidadNutrientes) {
@@ -18,6 +22,7 @@ public class Planta extends Organismo {
         this.cantidadLuz = cantidadLuz;
         this.cantidadNutrientes = cantidadNutrientes;
     }
+
 
     // Getters y setters de la clase Planta
     public String getNombre() {return nombre;}
