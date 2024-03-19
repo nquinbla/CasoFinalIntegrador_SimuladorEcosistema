@@ -19,13 +19,28 @@ public class Planta extends Organismo {
     }
 
     // Getters y setters de la clase Planta
-    public String getTipo() {return tipo;}
-    public void setTipo(String tipo) {this.tipo = tipo;}
-    public String getEspecie() {return especie;}
-    public void setEspecie(String especie) {this.especie = especie;}
-    public static List<Planta> getPlantasList() {return plantasList;}
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public String getEspecie() {
+        return especie;
+    }
+
+    public void setEspecie(String especie) {
+        this.especie = especie;
+    }
+
+    public static List<Planta> getPlantasList() {
+        return plantasList;
+    }
 
     @Override
     public String toString() {
         return "Planta: " + this.getNombre();
     }
+}
