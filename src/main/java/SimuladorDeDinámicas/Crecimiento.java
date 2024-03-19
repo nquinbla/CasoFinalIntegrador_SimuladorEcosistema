@@ -1,52 +1,33 @@
 package SimuladorDeDinámicas;
 
-import ModeladoDeEntidades.*;
 import java.util.ArrayList;
+import java.util.List;
 
-// Clase Crecimiento
 public class Crecimiento {
-    private ArrayList<Organismo> poblacion;
+    private Especie especie;
+    private int cantidad;
 
-    // Constructor de la clase Crecimiento
-    public Crecimiento(ArrayList<Organismo> poblacion) {this.poblacion = poblacion;}
-
-    // Atributos de la clase Crecimiento para los animales
-    public void crecimientoPoblacionAnimal() {
-        ArrayList<Animal> nuevosAnimales = new ArrayList<>();
-
-        for (Organismo organismo : poblacion) {
-            if (organismo instanceof Animal) {
-                Animal animal = (Animal) organismo;
-                animal.setEdad(animal.getEdad() + 1);
-                animal.setSalud(animal.getSalud() + 5);
-
-                if (animal.isEstadoReproductivo()) {
-                    Animal nuevoAnimal = new Animal(animal.getX(), animal.getY(), 0, 100, true, animal.getNombre(), animal.getEspecie(), animal.getSexo());
-                    nuevosAnimales.add(nuevoAnimal);
-                }
-            }
-        }
-
-        poblacion.addAll(nuevosAnimales);
+    public Crecimiento(Especie especie, int cantidad) {
+        this.especie = especie;
+        this.cantidad = cantidad;
     }
 
-    // Atributos de la clase Crecimiento para las plantas
-    public void crecimientoPoblacionPlanta() {
-        ArrayList<Planta> nuevasPlantas = new ArrayList<>();
+    public Especie getEspecie() {
+        return especie;
+    }
 
-        for (Organismo organismo : poblacion) {
-            if (organismo instanceof Planta) {
-                Planta planta = (Planta) organismo;
-                planta.setEdad(planta.getEdad() + 1);
-                planta.setSalud(planta.getSalud() + 3);
+    public int getCantidad() {
+        return cantidad;
+    }
 
-                if (planta.isEstadoReproductivo()) {
-                    Planta nuevaPlanta = new Planta(planta.getX(), planta.getY(), 0, 100, true, planta.getNombre(), planta.getEspecie(), planta.getCantidadAgua(), planta.getCantidadLuz(), planta.getCantidadNutrientes());
-                    nuevasPlantas.add(nuevaPlanta);
-                }
-            }
-        }
+    public void crecer() {
+        // Simulamos el crecimiento de la población según la tasa de crecimiento de la especie
+        cantidad += cantidad * especie.getTasaCrecimiento() / 100;
+    }
 
-        poblacion.addAll(nuevasPlantas);
+    public void reproducirse() {
+        // Simulamos la reproducción de la población según la tasa de reproducción de la especie
+        cantidad += cantidad * especie.getTasaReproduccion() / 100;
     }
 }
+
