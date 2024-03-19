@@ -1,4 +1,9 @@
+import ModeladoDeEntidades.*;
+import GestiónUsuariosYSimulaciones.*;
+import SimuladorDeDinámicas.*;
+
 import java.util.Scanner;
+
 
 
 
@@ -33,10 +38,19 @@ public class Simulador {
                 System.out.println("----- INVESTIGADOR -----");
                 System.out.println("Bienvenido al gestor de simulaciones como investigador.");
 
+                System.out.print("Usuario: ");
+                String usuario = scanner.next();
+                System.out.print("Contraseña: ");
+                String contraseña = scanner.next();
 
+                GestiónUsuariosYSimulaciones.Autenticacion autenticacion = new GestiónUsuariosYSimulaciones.Autenticacion();
+                if (autenticacion.iniciarSesion(usuario, contraseña)) {
+                    System.out.println("Inicio de sesión exitoso.");
+                    // Aquí puedes agregar el código para manejar las acciones del investigador
 
-
-                break;
+                } else {
+                    System.out.println("Inicio de sesión fallido. Usuario o contraseña incorrectos.");
+                } break;
 
 
             case 3: // SALIR
