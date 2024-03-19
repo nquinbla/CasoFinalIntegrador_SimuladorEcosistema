@@ -151,7 +151,39 @@ public class Simulador {
                 // Intentar iniciar sesión
                 if (interfaz.getAutenticacion().iniciarSesion(usuario, contraseña)) {
                     System.out.println("Inicio de sesión exitoso. Bienvenido, " + usuario + ".");
-                    // interfaz.mostrarInterfaz(); // Este método no existe en tu clase Interfaz
+
+                    scanner.nextLine(); // consume the newline
+
+                    System.out.println("Por favor, seleccione una opción:");
+                    System.out.println("1. Ejecutar simulación");
+                    System.out.println("2. Visualizar resultados");
+                    System.out.println("3. Integrar nuevas funciones");
+                    System.out.println("4. Salir");
+
+                    int opcionInvestigador = scanner.nextInt();
+                    scanner.nextLine(); // consume the newline
+
+                    switch (opcionInvestigador) {
+                        case 1:
+                            System.out.println("Ejecutando simulación...");
+                            break;
+
+                        case 2:
+                            System.out.println("Visualizando resultados...");
+                            break;
+
+                        case 3:
+                            System.out.println("Integrando nuevas funciones...");
+                            break;
+
+                        case 4:
+                            System.out.println("Saliendo del gestor de simulaciones...");
+                            break;
+
+                        default:
+                            System.out.println("Opción no válida.");
+                    }
+
                 } else {
                     System.out.println("Inicio de sesión fallido. Usuario o contraseña incorrectos.");
                 }
@@ -163,6 +195,9 @@ public class Simulador {
 
             default:
                 System.out.println("Opción no válida.");
-        }
+        } case 3: // SALIR
+        System.out.println("Saliendo del gestor de simulaciones...");
+        break;
     }
-} }
+}
+}
