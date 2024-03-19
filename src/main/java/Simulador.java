@@ -46,8 +46,7 @@ public class Simulador {
                     // interfaz.mostrarInterfaz(); // Este método no existe en tu clase Interfaz
                 } else {
                     System.out.println("Inicio de sesión fallido. Usuario o contraseña incorrectos.");
-                }
-                break;
+                } break;
 
             case 3: // SALIR
                 System.out.println("Saliendo del gestor de simulaciones...");
