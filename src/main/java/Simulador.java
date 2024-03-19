@@ -51,7 +51,7 @@ public class Simulador {
                         boolean estadoReproduccion = scanner.nextBoolean ();
 
                         // Crear una nueva instancia de Planta con los datos proporcionados
-                        Planta nuevaPlanta = new Planta ( nombre, tipo, altura, salud, estadoReproduccion );
+                        Planta nuevaPlanta = new Planta (0, 0, 0, 100, estadoReproduccion, nombre, false, false, true);
                         System.out.println ( "¡Planta creada exitosamente!" );
                      break;
 
