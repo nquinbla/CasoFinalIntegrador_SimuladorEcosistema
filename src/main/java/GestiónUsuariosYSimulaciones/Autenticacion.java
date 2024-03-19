@@ -12,6 +12,7 @@ public class Autenticacion {
         // Simulamos usuarios registrados (usuario, contraseña)
         usuariosRegistrados.put("Nerea Quintanilla", "tartadequeso");
         usuariosRegistrados.put("Ruben", "UAXmaker");
+        usuariosRegistrados.put("Invitado", "Invitado");
     }
 
     // Método para iniciar sesión
