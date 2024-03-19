@@ -12,6 +12,7 @@ import java.util.Random;
 
 public class Simulador {
 
+
     Scanner scanner = new Scanner(System.in);
     private Simulador simulador = new Simulador();
     private Autenticacion autenticacion;
