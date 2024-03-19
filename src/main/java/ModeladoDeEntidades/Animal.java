@@ -10,7 +10,7 @@ public class Animal extends Organismo {
     private static ArrayList<Animal> animalesList = new ArrayList<>();
 
     // Constructor de la clase Animal
-    public Animal(String nombre, Posicion posicion, int salud, int edad, boolean estadoReproductivo, String especie, double alimentacion) {
+    public Animal(String nombre, Posicion posicion, int salud, int edad, boolean estadoReproductivo, String especie, String alimentacion) {
         super(nombre, posicion, salud, edad, estadoReproductivo);
         this.especie = especie;
         this.alimentacion = alimentacion;
