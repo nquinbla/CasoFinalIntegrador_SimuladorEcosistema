@@ -45,7 +45,7 @@ public class Simulador {
                         String tipo = scanner.next ();
                         System.out.println ( "Ingrese la altura de la planta:" );
                         double altura = scanner.nextDouble ();
-                        System.out.println ( "Ingrese el estado de salud de la planta (bueno, regular, malo):" );
+                        System.out.println ( "Ingrese el estado de salud de la planta " + "(saludable, enferma, en peligro de extinción):" );
                         String salud = scanner.next ();
                         System.out.println ( "Ingrese el estado de reproducción de la planta (true/false):" );
                         boolean estadoReproduccion = scanner.nextBoolean ();
@@ -62,7 +62,6 @@ public class Simulador {
                         String especie = scanner.next ();
                         System.out.println ( "Ingrese la edad del animal:" );
                         int edad = scanner.nextInt ();
-                        // Aquí puedes agregar más atributos según tu clase Animal
                         System.out.println ( "Ingrese el género del animal:" );
                         String genero = scanner.next ();
                         System.out.println ( "Ingrese el color del animal:" );
@@ -87,10 +86,6 @@ public class Simulador {
 
                 // Crear una población inicial
                 ArrayList<Organismo> poblacion = new ArrayList<>();
-                Animal animal = new Animal(0, 0, 0, 100, false, "Animal", false, false, true);
-                Planta planta = new Planta(0, 0, 0, 100, false, "Planta", false, false, true);
-                poblacion.add(animal);
-                poblacion.add(planta);
 
                 // Crear una instancia de la clase Crecimiento
                 Especie especie = new Especie("Especie", 1, 1);
